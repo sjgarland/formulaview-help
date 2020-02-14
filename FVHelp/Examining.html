@@ -1,0 +1,83 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+  <title>Formula View Help: Introduction</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<body>
+
+  <div id="header">
+    <img id="logo" src="Images/fv.png" alt="Formula View logo">
+    <div id="logoTitle">Formula View<div id="logoSubtitle">Documentation</div></div>
+    <span id="headerTitle">Examining a Long Formula</span>
+    <span id="headerNav">
+      <a href="Uses.html">&#11014; Use cases</a><br>
+      <a href="Debugging.html">&#11013; Debugging a formula</a><br>
+      <a href="TextView.html">&#10145; Text view</a>
+    </span>
+  </div>
+
+  <p>
+    Long formulas can be hard to read.  Consider, for example, a spreadsheet that uses
+    a formula such as this to compute a letter grade for students scoring above average
+    on an exam.
+  </p>
+  <p class="center">
+    <code>IF(B2>=90,"A",IF(B2>=80,"B","C"))&IF(OR(B2=100,MOD(B2,10)>7),"+",IF(MOD(B2,10)<3,"-",""))</code>
+  </p>
+  <p>
+    It's hard to tell which parentheses match up in a formula this long,
+    and it's hard to understand what's going on in one part of the formula when
+    details in another part overwhelm what we want to see there.  Furthermore,
+    a formula of this size does not fit tidily into Excel's task pane.
+  </p>
+
+  <div class="figure">
+    <img src="Images/Examining/Taskpane.png" alt="Image of Formula View taskpane">
+    <span class="caption">A long formula in a narrow task pane</span>
+  </div>
+
+  <p>
+    We can pan around in the Formula View using scrollbars (which unfortunately are somewhat
+    elusive in Excel for Windows).  We can also enlarge the task pane (in Excel for
+    Windows or the Mac) by dragging its left edge further to left, but the pane may
+    still be too narrow.  And, in Excel for Windows, we can undock the task pane
+    by dragging its top edge upwards and then make it as large as we wish.  But even that
+    may not be large enough.
+  </p>
+
+  <p>
+    Fortunately, the tree view gives us another way to see just what we want.  We can suppress
+    details associated with selected elements in the view by clicking the triangular
+    collapse/expand icons just below those elements, thereby giving us a clearer view of the remaining
+    elements.  Formula View automatically synchronizes the text and math views with
+    the tree view, replacing collapsed elements in those views with ellipses (...). 
+  </p>
+
+  <div class="figure">
+    <img src="Images/Examining/Collapsed.png" alt="Collapsed tree view">
+    <span class="caption">Collapsing an element in the tree view</span>
+  </div>
+
+  <p>
+    By collapsing the element in our formula that computes a letter grade, <code>A</code>
+    through <code>C</code>, we see more clearly the <code>IF</code>element for generating
+    a plus or minus sign to follow the letter.  If we wish to focus attention on the element
+    that computes the letter grade, we can expand it by clicking its triangular
+    collapse/expand icon (indicated by the cursor) and collapsing the tree below the other
+    <code>IF</code> element.
+  </p>
+  <p>
+    See <a href="Collapses.html">Abbreviating a Formula</a> for more information.
+  </p>
+
+  <div id="footer">
+    <span class="nav"><a href="Debugging.html">&#11013; Debugging a formula</a></span>
+    <span class="nav center"><a href="Uses.html">&#11014; Use cases</a></span>
+    <span class="nav right"><a href="TextView.html">Text view &#10145;</a></span>
+  </div>
+
+</body>
+</html>

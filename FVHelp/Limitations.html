@@ -1,0 +1,87 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+
+<head>
+  <title>Formula View Help: Limitations</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  
+  <div id="header">
+    <img id="logo" src="Images/fv.png" alt="Formula View logo">
+    <div id="logoTitle">Formula View<div id="logoSubtitle">Documentation</div></div>
+    <span id="headerTitle">Limitations</span>
+    <span id="headerNav">
+      <a href="Appendices.html">&#11014; Appendices</a><br>
+      <a href="Installation.html">&#10145; Installation</a>
+    </span>
+  </div>
+  
+  <p>
+    The current release of Formula View has the following limitations.
+  </p>
+  
+  <h4>Web access required</h4>
+
+  <p>
+    Formula View, like all add-ins for Office 365, can only be used when connected to the web.
+  </p>
+  
+  <p>
+    The <a href="MathView.html">math view</a> uses the web-based typesetting
+    service provided by <a href="http://mathjax.org">MathJax.org</a>.
+    Hence the math view is available only if that service is available.
+  </p>
+  
+  <h4>Notations in formulas</h4>
+  
+  <p>
+    Formula View does not recognize R1C1 notations for references.
+  </p><p>
+    Formula View treats identifiers such as <code>ABCD2</code> and <code>A1234567</code> as
+    references to cells, rather than as user-defined names, even though they exceed Excel's limits on the
+    maximum numbers of rows and columns in a spreadsheet.
+  </p><p>
+    Formula View does not recognize structured references, such as <code>Inventory[InStock]</code>,
+    to columns in tables.
+  </p>
+  
+  <h4>Array expressions</h4>
+  
+  <p>
+    Formula View may display incorrect values for expressions that occur in array formulas or
+    in functions like <code>SUMPRODUCT</code>, which treat their arguments as array formulas.
+  </p>
+
+  <h4>Volatile functions</h4>
+
+  <p>
+    Some functions in Excel are <em>volatile</em> in that they can produce different results
+    each time they are evaluated.  For example, <code>RND</code> and <code>RNDBETWEEN</code>
+    deliberately produce different (and unpredictable) values.  The functions <code>NOW</code>,
+    <code>TODAY</code>, <code>OFFSET</code>, and <code>INDIRECT</code> are also volatile, as
+    are <code>INFO</code>, <code>CELL</code>, and <code>SUMIF</code> for certain arguments.
+    Excel recommends using volatile functions sparingly.
+  </p><p>
+    Because Formula View uses Excel to compute values for display in the tree view, it can
+    change the value of the viewed formula.  Furthermore, the value it shows for
+    a volatile function in the tree view may be inconsistent with the values it shows for
+    elements above that function.  (This is a bug that may be fixed in a future release.)
+  </p>
+
+  <h4>Limitations imposed by Excel for the web</h4>
+
+  <p>
+    Excel for the web does not allow the width of the taskpane to be increased.  Neither does
+    it allow the taskpane to be undocked.
+  </p>
+  
+  <div id="footer">
+    <span class="nav">&nbsp;</span>
+    <span class="nav center"><a href="Appendices.html">&#11014; Appendices</a></span>
+    <span class="nav right"><a href="Installation.html">Installation &#10145;</a></span>
+  </div>
+  
+</body>
+</html>

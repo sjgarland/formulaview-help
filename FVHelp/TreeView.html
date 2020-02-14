@@ -1,0 +1,113 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+  <title>Formula View Help: Tree View</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  
+  <div id="header">
+    <img id="logo" src="Images/fv.png" alt="Formula View logo">
+    <div id="logoTitle">Formula View<div id="logoSubtitle">Documentation</div></div>
+    <span id="headerTitle">Tree View</span>
+    <span id="headerNav">
+      <a href="TOC.html">&#11014; Table of contents</a><br>
+      <a href="MathView.html">&#11013; Math view</a><br>
+      <a href="Values.html">&#10145; Values in the tree view</a>
+    </span>
+  </div>
+  
+  <p>
+    Formulas in Excel specify computations to perform on values represented by constants and on values
+    it finds in spreadsheet cells.  The <em>tree view</em> portrays a formula in a way that clarifies
+    the order in which these computations are performed.
+  </p>
+  <p>
+    For example, the tree view for the discriminant in the quadratic formula shows that Excel evaluates
+    the power <code>B2^2</code> and the product <code>4*A3*C3</code> before it evaluates their
+    difference.  The lowest rectangles in the diagram contain labels for primitive values: constants
+    (<code>2</code> and <code>4</code>) and references (<code>A3</code>, <code>B3</code>, and
+    <code>C3</code>) to values in spreadsheet cells.  Above them are rectangles that contain
+    operators: exponentiation <code>^</code>, multiplication <code>&times;</code>, and subtraction
+    <code>-</code>.  Next to each rectangle for a reference or operator is its value.
+  </p>
+
+  <div class="figure">
+    <img src="Images/TreeViewDiscriminant.png" alt="Tree view for B3^2 - 4*A3*C3">
+    <span class="caption">Tree view for B3^2 - 4*A3*C3</span>
+  </div>
+
+  <p>
+    The tree view is particularly valuable when formulas are long and complicated, or when Excel does
+    not evaluate them in the order one might expect.  For example, the tree view shows that Excel
+    evaluates <code>-A1^2</code> as if it had been written <code>(-A1)^2</code> and that one must write
+    <code>-(A1^2)</code> to get the operations performed in the other order.
+  </p>
+  
+  <div class="figure">
+    <div class="padded">
+      <img src="Images/TreeViewExponentiation1.png" alt="Tree view for -A1^2">
+      <span class="caption">-A1^2</span>
+    </div>
+    <div class="padded">
+      <img src="Images/TreeViewExponentiation1.png" alt="Tree view for (-A1)^2">
+      <span class="caption">(-A1)^2</span>
+    </div>
+    <div class="unpadded">
+      <img src="Images/TreeViewExponentiation2.png" alt="Tree view for -(A1^2)">
+      <span class="caption">-(A1^2)</span>
+    </div>
+  </div>
+  
+  <h4>Structure of the tree view</h4>
+  
+  <p>
+    The name <em>tree view</em> is motivated by that fact that such diagrams look like (upside down)
+    trees.  Each rectangle in the tree view
+    represents an element in a formula and contains a symbol that identifies the type of that element:
+  </p>
+  <ul>
+    <li>a constant (e.g., <code>2</code> or <code>"New York"</code>),</li>
+    <li>a reference to a cell or range (e.g., <code>A1</code> or <code>B1:B2</code>),</li>
+    <li>a user-defined name (e.g., <code>price</code> or <code>state</code>),</li>
+    <li>an operator (e.g., <code>+</code> or <code>*</code>), or</li>
+    <li>a function (e.g., <code>SQRT</code> or <code>IF</code>).</li>
+  </ul>
+  <p>
+    For increased readability, the tree view substitutes common mathematical symbols for the notations
+    used by Excel:
+  </p>
+  <ul>
+    <li><code>&times;</code> for <code>*</code>,</li>
+    <li><code>&#8804;</code> for <code>&lt;=</code>,</li>
+    <li><code>&#8805;</code> for <code>&gt;=</code>,</li>
+    <li><code>&#8800;</code> for <code>&lt;&gt;</code>,</li>
+    <li><code>&#8746;</code> for a comma used as a range union operator,</li>
+    <li><code>&#8745;</code> for a space used as a range intersection operator,</li>
+    <li><code>{...}</code> for an array constant, and</li>
+    <li><code>...</code> for a row in an array constant.</li>
+  </ul>
+  <p>
+    Each rectangle that contains an operator or a function represents a
+    decomposable expression.  Immediately beneath it in the tree view are other
+    rectangles, called its <em>children</em> and connected to it as in
+    an organization chart or family tree, representing the operator's operands
+    or the function's arguments.  Thus elements representing <code>4</code>, <code>A3</code>, and
+    <code>C3</code> are children of an element representing <code>4*A3*C3</code>, and an element
+    representing <code>A1</code> is a child of an element representing <code>SQRT(A1)</code>.
+  </p><p>
+    The lowest elements in the tree view represent indecomposable elements:
+    constants, references, user-defined names, and functions without any arguments (e.g., <code>PI()</code>).
+  </p><p>
+    No parentheses appear in the tree view.
+  </p>
+  
+  <div id="footer">
+    <span class="nav"><a href="MathView.html">&#11013; Math view</a></span>
+    <span class="nav center"><a href="TOC.html">&#11014; Table of contents</a></span>
+    <span class="nav right"><a href="Values.html">Values in the tree view &#10145;</a></span>
+  </div>
+  
+</body>
+</html>
