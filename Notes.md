@@ -18,8 +18,7 @@ The contents of multiple files were combined into a single file, `FormulaViewHel
 
 The contents of `FormulaViewHelp.html` were pasted into a new WordPress page.  WordPress seems to have stripped away many HTML tags, stripped class information out of other tags, and otherwise mangled the HTML.  This information was restored, and the HTML was cleaned up, as follows.
 
-Removed line breaks from the middle of paragraphs.  These are treated like spaces in raw HTML, but the Definition theme
-treated them as actual breaks.
+Removed line breaks from the middle of paragraphs.  These are treated like spaces in raw HTML, but the Definition theme treated them as actual breaks.
 
 Changed the HTML header tags _&lt;h2&gt;_, _&lt;h3&gt;_, and _&lt;h4&gt;_ (which produced headers that were too big) to _&lt;h3&gt;_, _&lt;h4&gt;_, and _&lt;h5&gt;_.
 
