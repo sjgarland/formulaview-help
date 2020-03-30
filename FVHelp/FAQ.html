@@ -1,0 +1,169 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+
+<head>
+  <title>Formula View Help: Frequently Asked Questions</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  
+  <div id="header">
+    <img id="logo" src="Images/fv.png" alt="Formula View logo">
+    <div id="logoTitle">Formula View<div id="logoSubtitle">Documentation</div></div>
+    <span id="headerTitle">Frequently Asked Questions</span>
+    <span id="headerNav">
+      <a href="Appendices.html">&#11014; Appendices</a><br>
+      <a href="Installation.html">&#10145; Installation</a>
+    </span>
+  </div>
+
+<h4>General questions</h4>
+  
+<dl>
+    <dt>
+        How long will Formula View be available for free?
+    </dt>
+    <dd>
+        Honestly, we don't know.  We reserve the right to charge or require licenses
+        for its use, but will give fair notice if we choose to do so.
+    </dd>
+    <dt>
+        Can I use Formula View offline?
+    </dt>
+    <dd>
+        Unfortunately not.  Formula View, like all add-ins for Office 365,
+        can be used only when connected to the web.  Furthermore, the
+        <a href="MathView.html">math view</a> uses a web-based typesetting
+        service provided by <a href="http://mathjax.org">MathJax.org</a>.
+        Hence it is available only when it can reach the MathJax site.
+    </dd>
+    <dt>
+        Why doesn't Formula View work in Excel for the web with my browser?
+    </dt>
+    <dd>
+        Formula View does not work with Internet Explorer after Release 11.657, which fails
+        to typeset the math view and fails to draw boxes in the tree view that are wide
+        enough to contain symbols such as <code>SQRT</code>.  Please follow Microsoft's
+        recommendation to use Edge instead of Internet Explorer: it is faster and has better
+        features.  If you are having problems with another browser, please let us know.
+    </dd>
+    <dt>
+        Why doesn't Formula View recognize my formula?
+    </dt>
+    <dd>
+        Formula View does not recognize R1C1 notations for references.  Neither
+        does it recognize structured references, such as <code>Inventory[InStock]</code>,
+        to columns in tables.  This may change in a future release.
+    </dd>
+    <dt>
+        Can Formula View misinterpret my formula?
+    </dt>
+    <dd>
+        Unfortunately, yes.  Formula View treats identifiers such as <code>ABCD2</code>
+        and <code>A1234567</code> as references to cells, and not as user-defined names,
+        even though they exceed Excel's limits on the maximum numbers of rows and columns
+        in a spreadsheet.  Please let us know if it gets anything else wrong.
+    </dd>
+</dl>
+
+<h4>Questions about values in the tree view</h4>
+    <dt>
+        Why won't Formula Forge show me values in the tree view?
+    </dt>
+    <dd>
+        Formula View will not compute values for the elements in your formula if it
+        is on a protected worksheet.  To ensure accuracy, Formula View temporarily
+        writes most elements in your formula into its cell and gets their values from Excel.
+        It cannot do this if the worksheet is protected.  Unprotect the sheet if you want
+        to see values.
+    </dd>
+    <dt>
+        But my worksheet isn't protected and I still can't see values in the tree view!
+    </dt>
+    <dd>
+        Formula View also refuses to compute values for a formula on a protected
+        workbook.  It hides its computation of values by displaying a new
+        sheet named <code>Formula Forge at work</code>, and it cannot create
+        that sheet if the workbook is protected.  Unprotect the workbook if you want to see values.
+    </dd>
+    <dt>
+        Why does Formula View change the value of my formula?
+    </dt>
+    <dd>
+        As just noted, Formula Forge temporarily copies elements
+        in your formula into its cell to get their values from Excel.  This can change
+        the value of your formula if it contains a <em>volatile</em> function, which
+        generally produces a different result when it is re-evaluated.  For example, <code>RND</code>
+        deliberately produces different (and unpredictable) values.  The functions <code>NOW</code>,
+        <code>TODAY</code>, <code>OFFSET</code>, <code>INDIRECT</code>, and 
+        <code>RNDBETWEEN</code> are also volatile, as are <code>INFO</code>, <code>CELL</code>,
+        and <code>SUMIF</code> for certain arguments.  Excel recommends using volatile functions sparingly.
+    </dd>
+    <dt>
+        Why does Excel show inconsistent values in the tree view?
+    </dt>
+    <dd>
+        Formula Forge uses Excel repeatedly to compute values for all elements in a formula like
+        <code>RND()+1</code>.  In response, Excel produces one random value for <code>RND()</code>
+        by itself and another for it in <code>RND()+1</code>.  These are highly unlikely to
+        differ by exactly <code>1</code>.  A future release of Formula View may evaluate volatile
+        functions differently.
+    </dd>
+    <dt>
+        When else might Excel show incorrect values in the tree view?
+    </dt>
+    <dd>
+        Formula View may display incorrect values for expressions in array formulas or
+        in functions like <code>SUMPRODUCT</code>, which treat their arguments as array formulas.
+    </dd>
+    <dt>
+        Can anything else go wrong if I ask Excel to show values in the tree view?
+    </dt>
+    <dd>
+        You should use Formula View with caution with the online version of Excel,
+        which stores spreadsheets on OneDrive and automatically saves all changes.
+        As a result, the temporary changes Formula View makes in your spreadsheets as
+        it computes values will be visible on OneDrive.  Likewise, you should use
+        Formula View with caution with desktop versions of Excel when <code>AutoSave</code>
+        is on.
+    </dd>
+</dl> 
+  
+<h4>Support</h4>
+
+<dl>
+    <dt>
+        Can I get help with my problems?
+    </dt>
+    <dd>
+        To report a problem with Formula View, send email to
+        <a href="mailto: support@formulaforge.com">support@formulaforge.com</a>.
+        Please tell us which version of Excel and which browser, if
+        any, you are using.  (You can find this information by choosing <code>About</code>
+        in the drop-down menu in the Formula View pane.) 
+    </dd>
+    <dt>
+        There seems to be a mistake in your documentation.  Can you fix it?
+    </dt>
+    <dd>
+        We'll do our best if you send us email.
+    </dd>
+    <dt>
+        Can I ask for enhancements to Formula View?
+    </dt>
+    <dd>
+        By all means, yes.  If what you request seems useful to others, and we can
+        figure out how to do it, we will do our best to oblige.
+    </dd>
+</dl>
+  
+  
+  <div id="footer">
+    <span class="nav">&nbsp;</span>
+    <span class="nav center"><a href="Appendices.html">&#11014; Appendices</a></span>
+    <span class="nav right"><a href="Installation.html">Installation &#10145;</a></span>
+  </div>
+  
+</body>
+</html>
