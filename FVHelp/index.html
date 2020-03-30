@@ -1,0 +1,84 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+    <title>Formula View Help</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <img id="logo" src="Images/fv.png" alt="Formula View logo">
+        <div id="logoTitle">Formula View<div id="logoSubtitle">Documentation</div></div>
+        <!--
+            <img id="logo" src="Images/documentationLogo.png" alt="Formula View Documentation">
+        -->
+        <span id="headerTitle">Introduction</span>
+        <span id="headerNav">
+            <a href="TOC.html">&#11014; Table of contents</a><br>
+            <a href="Uses.html">&#10145; Use cases</a>
+        </span>
+    </div>
+    
+    <p>
+        Formula View helps users of Microsoft Excel&reg; understand complicated formulas
+        by presenting multiple views that clarify their meaning and structure.  Its
+        forthcoming extension, Formula Forge, will make it easier to create and modify
+        formulas using intuitive drag-and-drop graphics instead of error-prone text
+        entry.
+    </p>
+    
+    <ul>
+        <li>
+            The <a href="TextView.html">text view</a> shows the text of a formula, as
+            it appears in Excel's formula bar.
+        </li>
+        <li>
+            The <a href="MathView.html">math view</a> shows a mathematically
+            typeset, easier to read version of the formula.
+        </li>
+        <li>
+            The <a href="TreeView.html">tree view</a> shows how Excel decomposes a
+            formula into simpler elements.  
+        </li>
+    </ul>
+    
+    <p>
+        Excel makes extensive use of parentheses, both to surround function
+        arguments and to constrain the evaluation order.  Without parentheses
+        in a formula like <code>(A1+A2)/(2*SQRT(B1))</code>, Excel would not know
+        to compute the numerator <code>A1+A2</code> and the denominator 
+        <code>2*SQRT(B1)</code> before it computed their quotient.  However, so many
+        parentheses in formulas can make them hard to read.
+    </p><p>
+        When installed in Excel, Formula View makes formulas much easier to read.
+        It adds a <code>View</code> button to Excel's <code>Formulas</code> ribbon.
+        Clicking that button causes Formula View to show a math and tree view,
+        uncluttered by parentheses, in addition to the text view for the formula
+        in the selected cell.
+    </p>
+
+    <p><em>TODO Redraw figure; include the Formulas ribbon.</em></p>
+    
+    <div class="figure">
+        <img src="Images/ThreeViews.png" alt="Three views of a simple formula">
+        <span class="caption">Three views of a simple formula</span>
+    </div>
+    
+    <p>
+        Formula View allows users to <a href="Navigation.html">select</a> an
+        element in a formula for attention by clicking it in any of its three views.
+        It also allows users to <a href="Abbreviations.html">collapse and expand</a>
+        elements to suppress or reveal detail, and it synchronizes all three
+        views so that actions in any one view are reflected automatically in the others.
+    </p>
+    
+    <div id="footer">
+        <span class="nav">&nbsp;</span>
+        <span class="nav center"><a href="TOC.html">&#11014; Contents</a></span>
+        <span class="nav right"><a href="Uses.html">Use cases &#10145;</a></span>
+    </div>
+    
+</body>
+</html>
