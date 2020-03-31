@@ -1,5 +1,5 @@
-# Formula View Help
+# Formula Forge Help
 
-This project contains the on-line documentation for the forthcoming Formula View add-in for Office 365 Excel.
+This project contains the on-line documentation for the Formula Forge add-in for Office 365 Excel.
 
-The `FormulaView` directory is installed at <https://formulaforge.com/Help/FormulaView.>
+The `Help` directory is installed at <https://formulaforge.com/View/Help>.
