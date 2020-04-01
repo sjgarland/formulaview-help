@@ -1,0 +1,108 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+
+<head>
+  <title>Formula Forge Help: Installation</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  
+  <div id="header">
+    <img id="logo" src="Images/fx.png" alt="Formula Forge logo">
+    <div id="logoTitle">Formula Forge<div id="logoSubtitle">Documentation</div></div>
+    <span id="headerTitle">Installation</span>
+    <span id="headerNav">
+      <a href="Appendices.html">&#11014; Appendices</a><br>
+      <a href="FAQ.html">&#11013; FAQ</a><br>
+      <a href="License.html">&#10145; License</a>
+    </span>
+  </div>
+  
+  <p>
+    Eventually, Formula Forge will be available as a utility for Office 365 Excel from Microsoft's
+    <a href="https://appsource.microsoft.com/en-us/marketplace/apps?product=office%3Bexcel&page=1&category=utilities-tools">AppSource market place</a>.
+    Prior to then, users must install a copy of a manifest, <code>formulaview.xml</code>, which they can
+    obtain by sending email to <a href="mailto:info@formulaforge.com">info@formulaforge.com</a>.
+  </p>  
+  
+  <h4>Installation in Excel for the web</h4>
+  
+  <p>
+    Open Excel's <code>Insert</code> ribbon, choose <code>Office Add-ins &gt;
+    MY ADDINS &gt; Upload My Add-in &gt; Browse</code>.  Then upload <code>formulaview.xml</code>.
+  </p>
+  
+  <h4>Installation in Excel for the Mac</h4>
+  
+  <p>
+    Put <code>formulaview.xml</code> in <code>~/Library/Containers/com.microsoft.Excel/Data/Documents/wef</code>.
+  </p><p>
+    Click the &#9660; icon to the right of <code>My Add-ins</code> on Excel's <code>Insert</code> ribbon
+    and select <code>Formula View</code>, which will be listed under <code>Developer Add-ins</code>.
+  </p>
+  
+  <h4>Installation in Excel for Windows</h4>
+
+  <p>
+    Installation in Excel for Windows involves the following steps.
+  </p>
+
+  <p>
+    <em>Create an add-in catalog.</em>  In File Explorer, create a folder named <code>AddInCatalog</code>.
+    Put <code>formulaview.xml</code> in this catalog.
+  </p><p>
+    <em>Share the add-in catalog.</em>
+    Right-click <code>AddInCatalog</code> and choose <code>Properties</code>.  In the <code>Properties</code>
+    dialog window, select the <code>Sharing</code> tab and click <code>Share</code>.
+    Within the <code>Network access</code> dialog window, add yourself and click <code>Share</code>.
+    When you see the confirmation <code>Your folder is shared</code>, click <code>Copy</code> to copy
+    the network path for <code>AddInCatalog</code> to the clipboard. Then click <code>Done</code> to
+    close this dialog window and <code>OK</code> to close the <code>Properties</code> dialog window.
+  </p>
+
+  <p>
+    <em>Make Excel trust the add-in catalog.</em>  Click <code>File</code> on Excel's ribbon and
+    select <code>Options &gt; Trust Center &gt; Trust Center Settings</code>.
+    In the <code>Trust Center</code> dialog window, select <code>Trusted Add-in Catalogs</code>,
+    paste the network path on the clipboard into the <code>Catalog Url</code> box, and delete the
+    final right parenthesis and everything that comes before <code>file://</code> in that box.
+    Then click <code>Add catalog</code> and the <code>Show in Menu</code> check box for the newly
+    trusted catalog.  Finally, click <code>OK</code> twice to close the <code>Trust Center</code>
+    and <code>Excel Options</code> dialog windows.
+  </p>
+
+  <p>
+    <em>Install Formula Forge.</em>
+    Close and reopen Excel.  Open Excel's <code>Insert</code> ribbon and choose
+    <code>My Add-ins</code>.  Select <code>SHARED FOLDER</code> at the top of the
+    <code>Office Add-ins</code> dialog window, click <code>Formula View</code>, and then click
+    <code>Add</code>.
+  </p>
+  
+  <h4>Installation in Excel for an iPad</h4>
+  <p>
+    Connect the iPad to a Mac with a USB cable.
+  </p><p>
+    In iTunes, choose the iPad icon below the menu bar.  Then
+  </p>
+  <ul>
+    <li>Under <code>Settings</code> on the left side of iTunes, choose <code>Apps</code>.</li>
+    <li>On the right side of iTunes, scroll down to <code>File Sharing</code>, and choose Excel in the <code>Add-ins</code> column.</li>
+    <li>In the Excel column, choose <code>Add File</code>, and then find and select <code>formulaview.xml</code>.</li>
+  </ul>
+  
+  <p>
+    Open Excel.  If it is already running, close and restart it.
+    Choose <code>Add-ins</code> on the <code>Insert</code> ribbon and select <code>Formula Forge</code>
+    from the <code>Developer</code> add-ins.
+  </p>  
+
+  <div id="footer">
+    <span class="nav"><a href="FAQ.html">&#11013; FAQ</a></span>
+    <span class="nav center"><a href="Appendices.html">&#11014; Appendices</a></span>
+    <span class="nav right"><a href="License.html">License &#10145;</a></span>
+  </div>
+  
+</body>
+</html>

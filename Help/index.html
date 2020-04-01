@@ -3,7 +3,6 @@
 <head>
     <title>Formula Forge Help</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 </head>
 
 <body>
@@ -11,22 +10,20 @@
     <div id="header">
         <img id="logo" src="Images/fx.png" alt="Formula Forge logo">
         <div id="logoTitle">Formula Forge<div id="logoSubtitle">Documentation</div></div>
-        <!--
-            <img id="logo" src="Images/documentationLogo.png" alt="Formula Forge Documentation">
-        -->
         <span id="headerTitle">Introduction</span>
         <span id="headerNav">
             <a href="TOC.html">&#11014; Table of contents</a><br>
             <a href="Uses.html">&#10145; Use cases</a>
         </span>
     </div>
+
+    <h1>Introduction</h1>
     
     <p>
         Formula Forge helps users of Microsoft Excel&reg; understand complicated formulas
-        by presenting multiple views that clarify their meaning and structure.  Its
-        forthcoming extension, Formula Forge, will make it easier to create and modify
-        formulas using intuitive drag-and-drop graphics instead of error-prone text
-        entry.
+        by presenting multiple views that clarify their meaning and structure.  A
+        forthcoming extension will let users create and modify formulas using intuitive
+        drag-and-drop graphics instead of error-prone text entry.
     </p>
     
     <ul>
@@ -50,16 +47,22 @@
         in a formula like <code>(A1+A2)/(2*SQRT(B1))</code>, Excel would not know
         to compute the numerator <code>A1+A2</code> and the denominator 
         <code>2*SQRT(B1)</code> before it computed their quotient.  However, so many
-        parentheses in formulas can make them hard to read.
+        parentheses in a formula can make it hard to read.
     </p><p>
-        When installed in Excel, Formula Forge makes formulas much easier to read.
-        It adds a <code>View</code> button to Excel's <code>Formulas</code> ribbon.
-        Clicking that button causes Formula Forge to show a math and tree view,
-        uncluttered by parentheses, in addition to the text view for the formula
-        in the selected cell.
+        Formula Forge adds two buttons to Excel's <code>Formulas</code> ribbon.
     </p>
 
-    <p><em>TODO Redraw figure; include the Formulas ribbon.</em></p>
+    <div class="figure">
+        <img src="Images/FormulasRibbon.png" alt="Enhanced Formulas ribbon">
+        <span class="caption">New buttons on Excel's <code>Formulas</code> ribbon</span>
+    </div>
+    
+    <p>
+        Clicking the <code>Formula View</code> button causes Formula Forge to show its math
+        and tree views, uncluttered by parentheses, in addition to the text view for
+        the formula in the selected cell.  Clicking the <code>Formula Forge</code> button
+        will provide the user with tools for editing that formula.
+    </p>
     
     <div class="figure">
         <img src="Images/ThreeViews.png" alt="Three views of a simple formula">
@@ -67,15 +70,15 @@
     </div>
     
     <p>
-        Formula Forge allows users to <a href="Navigation.html">select</a> an
-        element in a formula for attention by clicking it in any of its three views.
-        It also allows users to <a href="Abbreviations.html">collapse and expand</a>
-        elements to suppress or reveal detail, and it synchronizes all three
-        views so that actions in any one view are reflected automatically in the others.
+        Users can <a href="Navigation.html">select</a> an element in a formula for
+        attention by clicking it in any of the three views.  They can also
+        <a href="Abbreviations.html">collapse and expand</a> elements to suppress or
+        reveal detail.  Formula Forge synchronizes all three views so that whatever
+        the user does in any one view is reflected automatically in the others.
     </p>
     
     <div id="footer">
-        <span class="nav">&nbsp;</span>
+        <span class="nav">&copy; 2020 Stage One Software</span>
         <span class="nav center"><a href="TOC.html">&#11014; Contents</a></span>
         <span class="nav right"><a href="Uses.html">Use cases &#10145;</a></span>
     </div>

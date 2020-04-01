@@ -29,6 +29,7 @@ body, html {
 /* For <div id="logoTitle"> within a header */
 #logoTitle {
     margin-top:         7px;
+    margin-left:        10px;
     float:              left;
 }
 

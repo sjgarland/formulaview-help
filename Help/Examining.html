@@ -4,7 +4,6 @@
 <head>
   <title>Formula Forge Help: Examining a Long Formula</title>
   <link href="style.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 </head>
 
 <body>
@@ -16,9 +15,11 @@
     <span id="headerNav">
       <a href="Uses.html">&#11014; Use cases</a><br>
       <a href="Debugging.html">&#11013; Debugging a formula</a><br>
-      <a href="TextView.html">&#10145; Text view</a>
+      <a href="TextView.html">&#10145; The text view</a>
     </span>
   </div>
+
+  <h2>Use Case: Examining a Long Formula</h2>
 
   <p>
     Long formulas can be hard to read.  Consider, for example, a spreadsheet that uses
@@ -41,19 +42,20 @@
   </div>
 
   <p>
-    We can pan around in the Formula View using scrollbars (which unfortunately are somewhat
-    elusive in Excel for Windows).  We can also widen the Formula View pane (in Excel for
-    Windows or the Mac) by hovering the cursor over its left edge and dragging it left, but the pane may
-    still be too narrow.  And, in Excel for Windows, we can make the Formula View pane even
-    wider by dragging its top edge left to undock the pane and then resizing the
-    undocked pane by dragging its edges outward.  But even that may not be wide enough.
+    We can pan around in the Formula View pane using scrollbars (which are unfortunately somewhat
+    elusive in Excel for Windows).  Or we can try widening the Formula View pane by dragging
+    its left edge further left, but the pane may still be too narrow (and Excel for the web
+    doesn't let us widen the pane).  Or we can try undocking the pane by
+    dragging its top edge left and then resizing the undocked pane by dragging its edges outward.
+    (But Excel for the web doesn't let us undock the pane, and Excel for the Mac doesn't let us
+    widen it very much.)
   </p>
 
   <p>
     Fortunately, the tree view gives us another way to see just what we want.  We can suppress
     details associated with selected elements in the view by clicking the triangular
     collapse/expand icons just below those elements, thereby giving us a clearer view of the remaining
-    elements.  Formula View automatically synchronizes the text and math views with
+    elements.  Formula Forge automatically synchronizes the text and math views with
     the tree view, replacing collapsed elements in those views with ellipses (...). 
   </p>
 
@@ -64,20 +66,21 @@
 
   <p>
     By collapsing the element in our formula that computes a letter grade, <code>A</code>
-    through <code>C</code>, we see more clearly the <code>IF</code>element for generating
+    through <code>C</code>, we see more clearly the <code>IF</code> element that generates
     a plus or minus sign to follow the letter.  If we wish to focus attention on the element
     that computes the letter grade, we can expand it by clicking its triangular
     collapse/expand icon (indicated by the cursor) and collapsing the tree below the other
     <code>IF</code> element.
   </p>
   <p>
-    See <a href="Abbreviations.html">Abbreviating a Formula</a> for more information.
+    See <a href="Abbreviations.html">Abbreviating a Formula</a> for more information about
+    collapsing and expanding elements in the tree view.
   </p>
 
   <div id="footer">
     <span class="nav"><a href="Debugging.html">&#11013; Debugging a formula</a></span>
     <span class="nav center"><a href="Uses.html">&#11014; Use cases</a></span>
-    <span class="nav right"><a href="TextView.html">Text view &#10145;</a></span>
+    <span class="nav right"><a href="TextView.html">The text view &#10145;</a></span>
   </div>
 
 </body>

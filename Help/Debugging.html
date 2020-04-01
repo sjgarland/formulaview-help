@@ -4,7 +4,6 @@
 <head>
   <title>Formula Forge Help: Debugging a Formula</title>
   <link href="style.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 </head>
 
 <body>
@@ -19,6 +18,8 @@
       <a href="Examining.html">&#10145; Examining a long formula</a>
     </span>
   </div>
+
+  <h2>Use Case: Debugging a Formula</h2>
   
   <p>
     Spreadsheet formulas can be hard to get right, even when copied from published definitions, like
@@ -40,20 +41,11 @@
   </div>
   
   <p>
-    Formula View helps users find what causes problems like this.  To use it, select the cell
-    <code>B2</code> and click the <code>Get</code> button in the <code>Formula View</code>
-    tab on Excel's ribbon.
-  </p>
-  
-  <div class="figure">
-    <img src="Images/BellCurve/Ribbon.png" alt="Formula Forge ribbon">
-    <span class="caption">Selecting a formula for Formula View</span>
-  </div>
-  
-  <p>
-    This action causes Excel to display the Formula View pane, which presents
-    three views of the formula in cell <code>B2</code>. (The width of the pane shown
-    here was increased by dragging its edge to the left.)
+    Formula Forge helps users find what causes problems like this.  To use it, select
+    cell <code>B2</code> and click the <code>Formula View</code> button on Excel's
+    <code>Formulas</code> ribbon to see a <code>Formula View</code> pane
+    with three views of the formula in cell <code>B2</code>.  (The width
+    of the pane shown here was increased by dragging its edge to the left.)
   </p>
   
   <div class="figure">
@@ -71,7 +63,7 @@
     </li>
     <li>
       The <a href="TreeView.html">tree view</a> shows how Excel
-      decomposes the formula into smaller expressions, and it shows
+      decomposes the formula into smaller expressions, along with
       the values of those expressions. The top value looks
       decidedly wrong.
     </li>
@@ -92,8 +84,8 @@
   
   <p>
     We fix the problem by using Excel's formula bar to enclose <code>A2^2</code> in parentheses.  To
-    check that this solves the problem, we use the <code>Get</code> button again to reload the formula
-    in cell <code>B2</code> into Formula View.  Now the top value looks right in the tree view.
+    check that this solves the problem, we click the <code>Formula View</code> button again to display
+    the new version of the formula in cell <code>B2</code>.  Now the top value looks right in the tree view.
   </p>
 
   <div class="figure">
