@@ -18,7 +18,9 @@
     </span>
   </div>
 
-<h4>General questions</h4>
+  <h2>Appendix: Frequently Asked Questions</h2>
+
+<h3>General questions</h3>
   
 <dl>
     <dt>
@@ -52,7 +54,7 @@
         Why doesn't Formula Forge recognize my formula?
     </dt>
     <dd>
-        Formula Forge does not recognize R1C1 notations for references.  Neither
+        Formula Forge does not recognize <code>R1C1</code> notations for references.  Neither
         does it recognize structured references, such as <code>Inventory[InStock]</code>,
         to columns in tables.  This may change in a future release.
     </dd>
@@ -61,21 +63,23 @@
     </dt>
     <dd>
         Unfortunately, yes.  Formula Forge treats identifiers such as <code>ABCD2</code>
-        and <code>A1234567</code> as references to cells, and not as user-defined names,
+        and <code>A1234567</code> as references to cells, not as user-defined names,
         even though they exceed Excel's limits on the maximum numbers of rows and columns
         in a spreadsheet.  Please let us know if it gets anything else wrong.
     </dd>
 </dl>
 
-<h4>Questions about values in the tree view</h4>
+<h3>Questions about values in the tree view</h3>
+
+<dl>
     <dt>
         Why won't Formula Forge show me values in the tree view?
     </dt>
     <dd>
         Formula Forge will not compute values for the elements in your formula if it
         is on a protected worksheet.  To ensure accuracy, Formula Forge temporarily
-        writes most elements in your formula into its cell and gets their values from Excel.
-        It cannot do this if the worksheet is protected.  Unprotect the sheet if you want
+        writes elements in your formula into the cell from which it came, and it gets their values from Excel.
+        It cannot do this if your worksheet is protected.  Unprotect the sheet if you want
         to see values.
     </dd>
     <dt>
@@ -85,7 +89,7 @@
         Formula Forge also refuses to compute values for a formula on a protected
         workbook.  It hides its computation of values by displaying a new
         sheet named <code>Formula Forge at work</code>, and it cannot create
-        that sheet if the workbook is protected.  Unprotect the workbook if you want to see values.
+        that sheet if your workbook is protected.  Unprotect the workbook if you want to see values.
     </dd>
     <dt>
         Why does Formula Forge change the value of my formula?
@@ -111,26 +115,27 @@
         functions differently.
     </dd>
     <dt>
-        When else might Excel show incorrect values in the tree view?
+        When else might Formula Forge show incorrect values in the tree view?
     </dt>
     <dd>
-        Formula Forge may display incorrect values for expressions in array formulas or
+        Formula Forge does not update the values in the tree view if you make changes in your
+        spreadsheet.  It may also show incorrect values for expressions in array formulas or
         in functions like <code>SUMPRODUCT</code>, which treat their arguments as array formulas.
     </dd>
     <dt>
-        Can anything else go wrong if I ask Excel to show values in the tree view?
+        Can anything else go wrong if I ask Formula Forge to show values in the tree view?
     </dt>
     <dd>
         You should use Formula Forge with caution with the online version of Excel,
         which stores spreadsheets on OneDrive and automatically saves all changes.
-        As a result, the temporary changes Formula Forge makes in your spreadsheets as
+        As a result, the temporary changes Formula Forge makes in your spreadsheet as
         it computes values will be visible on OneDrive.  Likewise, you should use
         Formula Forge with caution with desktop versions of Excel when <code>AutoSave</code>
         is on.
     </dd>
 </dl> 
   
-<h4>Support</h4>
+<h3>Support</h3>
 
 <dl>
     <dt>
@@ -141,7 +146,7 @@
         <a href="mailto: support@formulaforge.com">support@formulaforge.com</a>.
         Please tell us which version of Excel and which browser, if
         any, you are using.  (You can find this information by choosing <code>About</code>
-        in the drop-down menu in the Formula Forge pane.) 
+        in the drop-down menu in the <code>Formula View</code> pane.) 
     </dd>
     <dt>
         There seems to be a mistake in your documentation.  Can you fix it?

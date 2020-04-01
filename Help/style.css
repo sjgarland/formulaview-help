@@ -1,4 +1,4 @@
-/*** Styles for Help pages ***/
+/*** Styles for Formula Foege help pages ***/
 
 body, html {
   margin:               0;
@@ -83,67 +83,40 @@ code {
 }
 
 dd {
-  margin:               0px 10px 20px 30px;
-  text-align:           left;
+  margin:               10px 10px 20px 20px;
+
 }
 
 dl {
-  margin:               1.2em 0;
+  margin-left:          10px;
 }
 
-dt {
-  margin:               0px 10px 5px 1.12em;
-  text-align:           left;
-  color:                blue;
-}
 
-/* Headers (only h4 is used in the help files; the others are reserved for a single-page file */
-h1, h2, h3, h4, h5, h6 {
+/* Headers (only h31-h3 are used in the help files) */
+h1, h2, h3, h3 {
   color:                #606060;
   clear:                both;
   margin-left:          10px;
 }
 
-/* h1 is for a chapter title */
+/* h1 is for a section title (invisible with this style sheet) */
 h1 {
   text-align:           center;
   font-size:            2em;
-  margin:               0.67em 0;                  /* The default */
   display:              none;
 }
 
-/* h2 is for a section title */
+/* h2 is for a subsection title (invisible with this style sheet) */
 h2 {
   text-align:           center;
   font-size:            2em;                       /* Default is 1.5em */
-  margin:               0.75em 0;                  /* The default */
   display:              none;
 }
 
-/* h3 is for a subsection title */
+/* h3 is for a heading on a page */
 h3 {
-  text-align:           center;
-  font-size:            2em;                       /* Default is 1.17em */
-  margin:               0.83em 0;                  /* The default */
-  display:              none;
-}
-
-/* h4 is for a major header on a page */
-h4 {
-  font-size:            1.35em;                    /* Default is 1.12em */
-  margin:               1.5em 10px 0.5em 10px;     /* Default is 1.12em 0*/
-}
-
-/* h5 is for a minor header on a page */
-h5 {
-  font-size:            1.17em;                    /* Default is .83em */
-  margin:               0.83em 0;                  /* The default */
-}
-
-/* h6 is not used */
-h6 {
-  font-size:            0.75em;                    /* Default is .75em */
-  margin:               0.75em 0;                  /* The default */
+  font-size:            1.35em;
+  margin:               1.5em 10px 0.5em 10px;
 }
 
 li {
