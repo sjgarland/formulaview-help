@@ -2,7 +2,19 @@
 
 ## Agenda
 
-Find better arrows than &#11014;, &#11013;, and &#10145;, which Edge displays with ugly icons.  Try SVG arrows instead of fuzzy PNG images such as ![this](Help/Images/left.png).
+Find better arrows than &#11014;, &#11013;, and &#10145;.  These arrows do not have the same width, and Edge displays them with ugly icons.  Try SVG arrows instead of fuzzy PNG images such as ![this](Help/Images/left.png).
+
+## Structure
+
+The documentation is stored in multiple HTML files at <https://formulaforge.com/Forge/Help>.  Each file starts with a header that contains a logo, title, and navigation links, and it ends with a trailer that provides the same navigation links.  After the header comes either an `<h1>` tag or an `<h2>` tag,
+depending upon whether that page is for a section or a subsection in the table of contents.  The stylesheet, `style.css`, makes the contents of these tags invisible.
+
+If it is ever desired to produce a single document containing all the help files, it suffices to extract (and join) the contents of these files that lie between the header and the trailer, and then to equip the combined document with a new stylesheet that makes the contents of the `<h1>` and `<h2>` tags visible.
+
+The screenshots are all taken with PC Excel.
+
+Microsoft has different versions of its help files that contain screenshots (and wording) appropriate for the different versions of its products.  We could emulate this by dividing the `Help` directory into
+separate subdirectories, `Help/PC`, `Help/Mac`, and `Help/Web`, putting platform-specific images in the `Images` directory of each of these directories, and making small changes in wording wherever appropriate.
 
 ## Styles
 

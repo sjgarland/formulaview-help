@@ -1,4 +1,4 @@
-/*** Styles for Formula Foege help pages ***/
+/*** Styles for Formula Forge help pages ***/
 
 body, html {
   margin:               0;
@@ -91,7 +91,6 @@ dl {
   margin-left:          10px;
 }
 
-
 /* Headers (only h31-h3 are used in the help files) */
 h1, h2, h3, h3 {
   color:                #606060;
@@ -143,7 +142,7 @@ td, th {
 
 ul {
   margin-left:           10px;
-  margin-top:            1em;
+  margin-top:            10px;
 }
 
 /* For <tag class="center"> */
