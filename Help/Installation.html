@@ -20,36 +20,44 @@
   </div>
 
   <h2>Installation</h2>
+
+  <h3>
+    Installation from  Microsoft's
+    <a href="https://appsource.microsoft.com/en-us/marketplace/apps?product=office%3Bexcel">AppSource</a>
+    market place
+  </h3>
+
+  <p>
+    Click <code>Get Add-Ins</code> on Excel's <code>Insert</code> ribbon, search for Formula Forge
+    in the Microsoft store, and click its <code>Add</code> button in the list of search results.
+  </p>
+
+  <h3>Installation of preliminary release</h3>
   
   <p>
-    Prior to Formula Forge being available in Microsoft's
-    <a href="https://appsource.microsoft.com/en-us/marketplace/apps?product=office%3Bexcel&page=1&category=utilities-tools">AppSource</a>
-    market place, users must install a copy of a manifest, <code>formulaforge.xml</code>, which they can
-    obtain by sending email to <a href="mailto:info@formulaforge.com">info@formulaforge.com</a>.
+    Prior to Formula Forge being available in AppSource, users can ask to try a preliminary
+    release by sending email to <a href="mailto:info@formulaforge.com">info@formulaforge.com</a>.
+    In response, they will receive a manifest, <code>formulaforge.xml</code>, to use as follows.
   </p>  
   
-  <h3>Installation in Excel for the web</h3>
+  <p><b>Using the preliminary release with Excel for the web</b></p>
   
   <p>
-    Open Excel's <code>Insert</code> ribbon, choose <code>Office Add-ins &gt;
+    Each time Excel is run, open its <code>Insert</code> ribbon, choose <code>Office Add-ins &gt;
     MY ADDINS &gt; Upload My Add-in &gt; Browse</code>.  Then upload <code>formulaforge.xml</code>.
   </p>
   
-  <h3>Installation in Excel for the Macintosh</h3>
+  <p><b>Using the preliminary release with Excel for the Macintosh</b></p>
   
   <p>
     Put <code>formulaforge.xml</code> in <code>~/Library/Containers/com.microsoft.Excel/Data/Documents/wef</code>.
   </p><p>
-    Click the &#9660; icon to the right of <code>My Add-ins</code> on Excel's <code>Insert</code> ribbon
-    and select <code>Formula Forge</code>, which will be listed under <code>Developer Add-ins</code>.
+    Each time Excel is run, click the &#9660; icon to the right of <code>My Add-ins</code> on Excel's
+    <code>Insert</code> ribbon and select <code>Formula Forge</code>, which will be listed under
+    <code>Developer Add-ins</code>.
   </p>
   
-  <h3>Installation in Excel for Windows</h3>
-
-  <p>
-    Installation in Excel for Windows involves the following steps, all but the last of which need be
-    done only once.
-  </p>
+  <p><b>Using the preliminary release with Excel for the Windows</b></p>
 
   <p>
     <em>Create an add-in catalog.</em>  In File Explorer, create a folder named <code>AddInCatalog</code>.
@@ -72,31 +80,28 @@
     final right parenthesis and everything that comes before <code>file://</code> in that box.
     Then click <code>Add catalog</code> and the <code>Show in Menu</code> check box for the newly
     trusted catalog.  Finally, click <code>OK</code> twice to close the <code>Trust Center</code>
-    and <code>Excel Options</code> dialog windows.
+    and <code>Excel Options</code> dialog windows; then close Excel.
   </p>
 
   <p>
-    <em>Install Formula Forge.</em>
-    Close and reopen Excel.  Open Excel's <code>Insert</code> ribbon and choose
+    Now, each time Excel is run, open its <code>Insert</code> ribbon and choose
     <code>My Add-ins</code>.  Select <code>SHARED FOLDER</code> at the top of the
     <code>Office Add-ins</code> dialog window, click <code>Formula Forge</code>, and then click
     <code>Add</code>.
   </p>
   
-  <h3>Installation in Excel for an iPad</h3>
+  <p><b>Using the preliminary release with Excel for an iPad</b></p>
+
   <p>
-    Connect the iPad to a Macintosh with a USB cable.
-  </p><p>
-    In iTunes, choose the iPad icon below the menu bar.  Then
+    Connect the iPad to a Macintosh with a USB cable.  In iTunes on the Macintosh, click the
+    small iPad icon in the menu bar to display the iPad's settings.
+    Choose the <code>File Sharing</code> setting.  Then choose Excel in the
+    <code>Add-ins</code> column, click  <code>Add...</code> in the <code>Excel Documents</code>
+    column, and find and select <code>formulaforge.xml</code>.
   </p>
-  <ul>
-    <li>Under <code>Settings</code> on the left side of iTunes, choose <code>Apps</code>.</li>
-    <li>On the right side of iTunes, scroll down to <code>File Sharing</code> and choose Excel in the <code>Add-ins</code> column.</li>
-    <li>In the <code>Excel</code> column, choose <code>Add File</code>, and then find and select <code>formulaforge.xml</code>.</li>
-  </ul>
   
   <p>
-    Open Excel.  If it is already running, close and restart it.
+    Open Excel on the iPad.  If it is already running, close and restart it.
     Choose <code>Add-ins</code> on the <code>Insert</code> ribbon and select <code>Formula Forge</code>
     from the <code>Developer</code> add-ins.
   </p>  
