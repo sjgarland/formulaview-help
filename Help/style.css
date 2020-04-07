@@ -4,7 +4,7 @@ body, html {
   margin:               0;
   padding:              0;
   min-width:            1100px;
-  font-family:      	  "Segoe UI", sans-serif;
+  font-family:      	  Helvetica, sans-serif;
   font-size:        	  14pt;
 }
 
@@ -28,7 +28,7 @@ body, html {
 
 /* For <div id="logoTitle"> within a header */
 #logoTitle {
-    margin-top:         7px;
+    margin-top:         4px;
     margin-left:        10px;
     float:              left;
 }
@@ -42,7 +42,7 @@ body, html {
 /* For <span id="headerTitle"> within a header */
 #headerTitle {
     margin-left:        60px;
-    margin-top:         24px;
+    margin-top:         21px;
     float:              left;
     color:              #505050;
 }
