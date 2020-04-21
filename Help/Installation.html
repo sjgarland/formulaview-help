@@ -1,4 +1,4 @@
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -7,110 +7,65 @@
 </head>
 
 <body>
-  
+
   <div id="header">
     <img id="logo" src="Images/fx.png" alt="Formula Forge logo">
-    <div id="logoTitle">Formula Forge<div id="logoSubtitle">User Guide</div></div>
-    <span id="headerTitle">Installation</span>
+    <div id="logoTitle">Formula Forge<div id="logoSubtitle">User Guide</div>
+    </div>
+    <span id="headerTitle">Installation and Terms of Use</span>
     <span id="headerNav">
       <a href="TOC.html">&#11014; Table of contents</a><br>
-      <a href="FAQ.html">&#11013; FAQ</a><br>
-      <a href="License.html">&#10145; License</a>
+      <a href="Glossary.html">&#11013; Enlarging the views</a><br>
     </span>
   </div>
 
-  <h2>Installation</h2>
+  <h2>Installation and Terms of Use</h2>
 
-  <h3>
-    Installation from  Microsoft's
+  <h3>Installation</h3>
+
+  <p>
+    When Formula Forge becomes available from Microsoft's
     <a href="https://appsource.microsoft.com/en-us/marketplace/apps?product=office%3Bexcel">AppSource</a>
-    market place
-  </h3>
-
-  <p>
-    Click <code>Get Add-Ins</code> on Excel's <code>Insert</code> ribbon, search for Formula Forge
-    in the Microsoft store, and click its <code>Add</code> button in the list of search results.
+    market place, click <code>Get Add-Ins</code> on Excel's <code>Insert</code> ribbon, search for Formula Forge
+    in the Microsoft store, and click its <code>Add</code> button in the list of search results. Prior to then,
+    users who wish to experiment with Formula Forge can request and install a <a href="Preliminary.html">preliminary
+    release</a>.
   </p>
 
-  <h3>Installation of preliminary release</h3>
-  
-  <p>
-    Prior to Formula Forge being available in AppSource, users can ask to try a preliminary
-    release by sending email to <a href="mailto:info@formulaforge.com">info@formulaforge.com</a>.
-    In response, they will receive a manifest, <code>formulaforge.xml</code>, to use as follows.
-  </p>  
-  
-  <p><b>Using the preliminary release with Excel for the web</b></p>
-  
-  <p>
-    Each time Excel is run, open its <code>Insert</code> ribbon, choose <code>Office Add-ins &gt;
-    MY ADDINS &gt; Upload My Add-in &gt; Browse</code>.  Then upload <code>formulaforge.xml</code>.
-  </p>
-  
-  <p><b>Using the preliminary release with Excel for the Macintosh</b></p>
-  
-  <p>
-    Put <code>formulaforge.xml</code> in <code>~/Library/Containers/com.microsoft.Excel/Data/Documents/wef</code>.
-  </p><p>
-    Each time Excel is run, click the &#9660; icon to the right of <code>My Add-ins</code> on Excel's
-    <code>Insert</code> ribbon and select <code>Formula Forge</code>, which will be listed under
-    <code>Developer Add-ins</code>.
-  </p>
-  
-  <p><b>Using the preliminary release with Excel for the Windows</b></p>
+  <h3>Frequently asked questions</h3>
 
   <p>
-    <em>Create an add-in catalog.</em>  In File Explorer, create a folder named <code>AddInCatalog</code>.
-    Put <code>formulaforge.xml</code> in this catalog.
-  </p><p>
-    <em>Share the add-in catalog.</em>
-    Right-click <code>AddInCatalog</code> and choose <code>Properties</code>.  In the <code>Properties</code>
-    dialog window, select the <code>Sharing</code> tab and click <code>Share</code>.
-    Within the <code>Network access</code> dialog window, add yourself and click <code>Share</code>.
-    When you see the confirmation <code>Your folder is shared</code>, click <code>Copy</code> to copy
-    the network path for <code>AddInCatalog</code> to the clipboard. Then click <code>Done</code> to
-    close this dialog window and <code>OK</code> to close the <code>Properties</code> dialog window.
+    Answers to <a href="https://formulaforge.com/faqs">frequently asked questions</a>
+    about Formula Forge&emdash;its use and limitations&emdash; can be found on the Formula
+    Forge website.
   </p>
 
-  <p>
-    <em>Make Excel trust the add-in catalog.</em>  Click <code>File</code> on Excel's ribbon and
-    select <code>Options &gt; Trust Center &gt; Trust Center Settings</code>.
-    In the <code>Trust Center</code> dialog window, select <code>Trusted Add-in Catalogs</code>,
-    paste the network path on the clipboard into the <code>Catalog Url</code> box, and delete the
-    final right parenthesis and everything that comes before <code>file://</code> in that box.
-    Then click <code>Add catalog</code> and the <code>Show in Menu</code> check box for the newly
-    trusted catalog.  Finally, click <code>OK</code> twice to close the <code>Trust Center</code>
-    and <code>Excel Options</code> dialog windows; then close Excel.
-  </p>
+  <h3>Terms of use</h3>
 
   <p>
-    Now, each time Excel is run, open its <code>Insert</code> ribbon and choose
-    <code>My Add-ins</code>.  Select <code>SHARED FOLDER</code> at the top of the
-    <code>Office Add-ins</code> dialog window, click <code>Formula Forge</code>, and then click
-    <code>Add</code>.
+    Use of Formula Forge is governed by
+    <a href="https://support.office.com/client/61994a3b-2c87-41c4-a88d-a6455efa362d?omkt=en">
+      Microsoft's Office Store Standard Application License Terms</a>. In particular,
   </p>
-  
-  <p><b>Using the preliminary release with Excel for an iPad</b></p>
+  <blockquote>
+    Formula Forge is licensed "As-is," "With all faults," and "As available," without warranty
+    of any kind, express or implied, including but not limited to the warranties of merchantability,
+    fitness for a particular purpose, and non-infringement. You bear all risks of using it.
+    In no event shall Stage One Software be liable for any claim, damages or other liability,
+    whether in an action of contract, tort or otherwise, arising from, out of, or in connection
+    with Formula Forge.
+  </blockquote>
+  <p>
+    See also the <a href="https://formulaforge.com/privacy-notice">privacy notice</a> on
+    Formula Forge's website.
+  </p>
 
-  <p>
-    Connect the iPad to a Macintosh with a USB cable.  In iTunes on the Macintosh, click the
-    small iPad icon in the menu bar to display the iPad's settings.
-    Choose the <code>File Sharing</code> setting.  Then choose Excel in the
-    <code>Add-ins</code> column, click  <code>Add...</code> in the <code>Excel Documents</code>
-    column, and find and select <code>formulaforge.xml</code>.
-  </p>
-  
-  <p>
-    Open Excel on the iPad.  If it is already running, close and restart it.
-    Choose <code>Add-ins</code> on the <code>Insert</code> ribbon and select <code>Formula Forge</code>
-    from the <code>Developer</code> add-ins.
-  </p>  
 
   <div id="footer">
-    <span class="nav"><a href="FAQ.html">&#11013; FAQ</a></span>
+    <span class="nav"><a href="Glossary.html">&#11013; Glossary</a></span>
     <span class="nav center"><a href="TOC.html">&#11014; Table of contents</a></span>
-    <span class="nav right"><a href="License.html">License &#10145;</a></span>
   </div>
-  
+
 </body>
+
 </html>
