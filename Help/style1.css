@@ -1,0 +1,210 @@
+/*** Styles for Formula Forge help pages ***/
+
+body, html {
+    margin:               0;
+    padding:              0;
+    min-width:            1100px;
+    height:               100%;
+    font-family:      	  Helvetica, sans-serif;
+    font-size:        	  14pt;
+  }
+  
+  iframe {
+    position: fixed;
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+  
+  /*** Headers and footers ***/
+  
+  /* For <div id="header"> */
+  #header {
+    display: none;
+  }
+  
+  #visibleHeader {
+    height: 80px;
+    margin-bottom:        20px;
+    padding:              10px;
+    font-size:        	  28pt;
+    color:                #4d82b8;  /* rgb(77,130,184), cmyk(58,29,0,28), hsb(210,58,72) */
+    background-color:     #f0f0f0;
+    overflow:             hidden;
+  }
+  
+  /* For <img id="logo"> within a header */
+  #logo {
+      float:              left;
+      vertical-align:     text-top;
+  }
+  
+  /* For <div id="logoTitle"> within a header */
+  #logoTitle {
+      margin-top:         4px;
+      margin-left:        10px;
+      float:              left;
+  }
+  
+  /* For <span id="logoSubtitle"> within a header */
+  #logoSubtitle {
+      font-size:          26px;
+      color:              #505050;
+  }
+  
+  /* For <span id="headerTitle"> within a header */
+  #headerTitle {
+      margin-left:        60px;
+      margin-top:         21px;
+      float:              left;
+      color:              #505050;
+  }
+  
+  /* For <span id="headerNav"> within a header */
+  #headerNav {
+      float:              right;
+      margin-top:         12px;
+      font-size:          17px;
+  }
+  
+  /* For <div id="footer"> */
+  #footer {
+    margin:               20px 0px 10px 0px;
+    padding:              10px 20px 10px 20px;
+    color:                #4d82b8;
+    background-color:     #f0f0f0;
+    clear:                both;
+    overflow:             hidden;
+  }
+  
+  /*** Body ***/
+  
+  /* Hyperlinks are blue, without underlining */
+  a {
+    color:                #4d82b8;
+    text-decoration:      none;
+    }
+  
+  /* A hyperlink is underlined when the cursor hovers over it */
+  a:hover { 
+    text-decoration:      underline;
+  }
+  
+  /* Code is highlighted to increase its visibility. */
+  code {
+    color:                darkolivegreen;
+  }
+  
+  dd {
+    margin:               10px 10px 20px 20px;
+  
+  }
+  
+  dl {
+    margin-left:          10px;
+  }
+  
+  /* Headers (only h31-h3 are used in the help files) */
+  h1, h2, h3, h3 {
+    color:                #606060;
+    clear:                both;
+    margin-left:          10px;
+  }
+  
+  /* h1 is for a section title (invisible with this style sheet) */
+  h1 {
+    text-align:           center;
+    font-size:            2em;
+  }
+  
+  /* h2 is for a subsection title (invisible with this style sheet) */
+  h2 {
+    text-align:           center;
+    font-size:            2em;                       /* Default is 1.5em */
+  }
+  
+  /* h3 is for a heading on a page */
+  h3 {
+    font-size:            1.35em;
+    margin:               1.5em 10px 0.5em 10px;
+  }
+  
+  li {
+    margin-left:          10px;
+    margin-bottom:        10px;
+    text-decoration:      none;
+    }
+  
+  p {
+    margin-left:          10px;
+    margin-right:         10px;
+    text-align:           left;
+    clear:                both;
+    }
+  
+  table {
+      margin:             0 60px 0 60px;
+      text-align:         left;
+    }
+  
+  td, th {
+    padding-right:         50px;
+  }
+  
+  ul {
+    margin-left:           10px;
+    margin-top:            10px;
+  }
+  
+  /* For <tag class="center"> */
+  .center {
+    text-align:           center;
+  }
+  
+  /* For <tag class="right"> */
+  .right {
+    text-align:           right;
+  }
+  
+  /* For <div class="figure"> */
+  .figure {
+    text-align:           center;
+  }
+  
+  /* Borders for images used in figures */
+  .figure img {
+    border-width:         4px;
+    border-style:         double;
+    border-color:         black;
+  }
+  
+  /* For <div class="padded"> within figures */
+  .padded {
+    padding-right:        20px;
+    display:              inline-block;
+  }
+  
+  /* For <div class="unpadded"> within figures */
+  .unpadded {
+    display:              inline-block;
+  }
+  
+  /* For <span class="caption"> */
+  .caption {
+    margin-top:           5px;
+    display:              block;
+  }
+  
+  /* For <img class="textOnRight"> */
+  .textOnRight {
+    float:                left;
+    margin:               10px;
+  }
+  
+  /* For <div class="nav"> */
+  .nav {
+    float:                left;
+    width:                33.33%;
+  }
+  
