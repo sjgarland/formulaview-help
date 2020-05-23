@@ -1,0 +1,108 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+
+<head>
+  <title>Formula Forge Help: Recognizing a Formula</title>
+  <link href="../site.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  
+  <div id="header">
+    <img id="logo" src="../Images/fx.png" alt="Formula Forge logo">
+    <div id="logoTitle">Formula Forge User Guide<div id="logoSubtitle">Stage One Software</div></div>
+    <span id="navigation">
+      <a href="../index.html">Home</a>
+      <a href="../Overview.html">Overview</a>
+      <a href="../Features.html">Features</a>
+      <span class="dropdown">
+        <strong><span onclick="toggleMenu()" class="dropdown-label">Help</span></strong>
+        <div id="menu" class="dropdown-content">
+          <a href="index.html">User Guide</a>
+          <a href="../FAQ.html">FAQ</a>
+          <a href="../Screencasts.html">Screencasts</a>
+        </div>
+      </span>
+      <a href="../About.html">About</a>
+    </span>
+  </div>
+  
+  <!--
+    <span id="headerNav">
+      <a href="TOC.html">&#11014; Table of contents</a><br>
+      <a href="Uses.html">&#11013; Use cases</a><br>
+      <a href="Parentheses.html">&#10145; Dealing with parentheses</a>
+    </span>
+  -->
+  
+  <div id="content">
+    
+    <h2>Use Case: Recognizing a Formula</h2>
+    
+    <p>
+      Formulas in spreadsheets can be hard to understand.  Do you recognize the one in cell
+      <code>E6</code>?
+    </p>
+    
+    <div class="figure">
+      <img src="Images/Recognizing/E6.png" alt="Formula in cell E6">
+      <span class="caption">A formula in cell E6</span>
+    </div>
+    
+    <p>
+      Let's ask Formula Forge for help.  Select cell <code>E6</code> and click the
+      <code>Get Formula</code> button on Excel's <code>Formulas</code> ribbon to
+      see a pane with three views of the formula in cell <code>E6</code>.
+      The math view, which shows the formula as it might be typeset in a book, is
+      particularly informative: it reveals that this formula
+      is none other than the familiar quadratic formula taught in high school algebra.
+    </p>
+    
+    <div class="figure">
+      <img src="Images/Recognizing/Views.png" alt="Formula Forge pane">
+      <span class="caption">The <code>Formula Forge</code> pane</span>
+    </div>
+    
+    <p>
+      Along with the math view are a text view and a tree view. The 
+      <code>Formula Forge </code> pane is not wide enough to display
+      the entire tree view, so we click its left edge and drag it left to
+      widen the pane.
+    </p>
+    
+    <div class="figure">
+      <img src="Images/Recognizing/TreeView.png" alt="The tree view">
+      <span class="caption">The widened tree view</span>
+    </div>
+    
+    <p>
+      Now we can see the entire tree view.  This view displays the elements
+      that comprise the formula, according to the order in which they are
+      evaluated, from the bottom up.  The elements at the bottom are constants
+      or references, and the elements higher up correspond to operators
+      or functions.  
+    </p>
+    <p>
+      To understand where an element in the tree view occurs in the entire formula,
+      we can click that element to highlight it in all views.  To find the smallest
+      element in the tree view that contains a symbol in either the text view or
+      the math view, we can click that symbol to highlight the containing element
+      in all views.  Formula Forge automatically synchronizes all three views when
+      an action occurs in any one of those views.
+    </p>
+    
+    <div class="figure">
+      <img src="Images/Recognizing/Selection.png" alt="Selection in the tree view">
+      <span class="caption">Selecting an element</span>
+    </div>
+    
+  </div>
+  
+  <div id="footer">
+    <span class="nav"><a href="Uses.html">&#11013; Use cases</a></span>
+    <span class="nav center"><a href="TOC.html">&#11014; Table of contents</a></span>
+    <span class="nav right"><a href="Parentheses.html">Dealing with parentheses &#10145;</a></span>
+  </div>
+  
+</body>
+</html>

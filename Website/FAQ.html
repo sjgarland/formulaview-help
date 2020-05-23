@@ -1,0 +1,182 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+    <title>Formula Forge: Frequently Asked Questions</title>
+    <link href="site.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="site.js"></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <img id="logo" src="Images/fx.png" alt="Formula Forge logo">
+        <div id="logoTitle">Formula Forge<div id="logoSubtitle">Stage One Software</div></div>
+        <span id="navigation">
+            <a href="index.html">Home</a>
+            <a href="Overview.html">Overview</a>
+            <a href="Features.html">Features</a>
+            <span class="dropdown">
+                <strong><span onclick="toggleMenu()" class="dropdown-label">Help</span></strong>
+                <div id="menu" class="dropdown-content">
+                    <a href="Help/index.html">User Guide</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="Screencasts.html">Screencasts</a>
+                </div>
+            </span>
+            <a href="About.html">About</a>
+        </span>
+    </div>
+    
+    <div id="content">
+        
+        <h1>Frequently Asked Questions</h1>
+        
+        <h2>General questions</h2>
+        
+        <dl>
+            <dt>
+                How long will Formula Forge be available for free?
+            </dt>
+            <dd>
+                Honestly, we don't know.  We reserve the right to charge or require licenses
+                for its use, but will give fair notice if we choose to do so.
+            </dd>
+            <dt>
+                Can I use Formula Forge offline?
+            </dt>
+            <dd>
+                Unfortunately not.  Formula Forge, like all add-ins for Office 365,
+                can be used only when connected to the web.  Furthermore, the
+                math view uses a web-based typesetting
+                service provided by <a href="http://mathjax.org">MathJax.org</a>.
+                Hence it is available only when it can reach the MathJax site.
+            </dd>
+            <dt>
+                Why doesn't Formula Forge work in Excel for the web with my browser?
+            </dt>
+            <dd>
+                Formula Forge does not work with Internet Explorer after Release 11.657, which fails
+                to typeset the math view and fails to draw boxes in the tree view that are wide
+                enough to contain symbols such as <code>SQRT</code>.  Please follow Microsoft's
+                recommendation to use Edge instead of Internet Explorer: it is faster and has better
+                features.  If you are having problems with another browser, please let us know.
+            </dd>
+            <dt>
+                Why doesn't Formula Forge recognize my formula?
+            </dt>
+            <dd>
+                Formula Forge does not recognize <code>R1C1</code> notations for references.  Neither
+                does it recognize structured references, such as <code>Inventory[InStock]</code>,
+                to columns in tables.  This may change in a future release.
+            </dd>
+            <dt>
+                Can Formula Forge misinterpret my formula?
+            </dt>
+            <dd>
+                Unfortunately, yes.  Formula Forge treats identifiers such as <code>ABCD2</code>
+                and <code>A1234567</code> as references to cells, not as user-defined names,
+                even though they exceed Excel's limits on the maximum numbers of rows and columns
+                in a spreadsheet.  Please let us know if it gets anything else wrong.
+            </dd>
+        </dl>
+        
+        <h2>Questions about values in the tree view</h2>
+        
+        <dl>
+            <dt>
+                Why won't Formula Forge show me values in the tree view?
+            </dt>
+            <dd>
+                Formula Forge will not compute values for the elements in your formula if it
+                is on a protected worksheet.  To ensure accuracy, Formula Forge temporarily
+                writes elements in your formula into the cell from which it came, and it gets their values from Excel.
+                It cannot do this if your worksheet is protected.  Unprotect the sheet if you want
+                to see values.
+            </dd>
+            <dt>
+                But my worksheet isn't protected and I still can't see values in the tree view!
+            </dt>
+            <dd>
+                Formula Forge also refuses to compute values for a formula on a protected
+                workbook.  It hides its computation of values by displaying a new
+                sheet named <code>Formula Forge at work</code>, and it cannot create
+                that sheet if your workbook is protected.  Unprotect the workbook if you want to see values.
+            </dd>
+            <dt>
+                Why does Formula Forge change the value of my formula?
+            </dt>
+            <dd>
+                As just noted, Formula Forge temporarily copies elements
+                in your formula into its cell to get their values from Excel.  This can change
+                the value of your formula if it contains a <em>volatile</em> function, which
+                generally produces a different result when it is re-evaluated.  For example, <code>RND</code>
+                deliberately produces different (and unpredictable) values.  The functions <code>NOW</code>,
+                <code>TODAY</code>, <code>OFFSET</code>, <code>INDIRECT</code>, and 
+                <code>RNDBETWEEN</code> are also volatile, as are <code>INFO</code>, <code>CELL</code>,
+                and <code>SUMIF</code> for certain arguments.  Excel recommends using volatile functions sparingly.
+            </dd>
+            <dt>
+                Why does Excel show inconsistent values in the tree view?
+            </dt>
+            <dd>
+                Formula Forge uses Excel repeatedly to compute values for all elements in a formula like
+                <code>RND()+1</code>.  In response, Excel produces one random value for <code>RND()</code>
+                by itself and another for it in <code>RND()+1</code>.  These are highly unlikely to
+                differ by exactly <code>1</code>.  A future release of Formula Forge may evaluate volatile
+                functions differently.
+            </dd>
+            <dt>
+                When else might Formula Forge show incorrect values in the tree view?
+            </dt>
+            <dd>
+                Formula Forge does not update the values in the tree view if you make changes in your
+                spreadsheet.  It may also show incorrect values for expressions in array formulas or
+                in functions like <code>SUMPRODUCT</code>, which treat their arguments as array formulas.
+            </dd>
+            <dt>
+                Can anything else go wrong if I ask Formula Forge to show values in the tree view?
+            </dt>
+            <dd>
+                You should use Formula Forge with caution with the online version of Excel,
+                which stores spreadsheets on OneDrive and automatically saves all changes.
+                As a result, the temporary changes Formula Forge makes in your spreadsheet as
+                it computes values will be visible on OneDrive.  Likewise, you should use
+                Formula Forge with caution with desktop versions of Excel when <code>AutoSave</code>
+                is on.
+            </dd>
+        </dl> 
+        
+        <h2>Support</h2>
+        
+        <dl>
+            <dt>
+                Can I get help with my problems?
+            </dt>
+            <dd>
+                To report a problem with Formula Forge, send email to
+                <a href="mailto: support@formulaforge.com">support@formulaforge.com</a>.
+                Please tell us which version of Excel and which browser, if
+                any, you are using.  (You can find this information by clicking <code>About</code>
+                in the Formula Forge menu.) 
+            </dd>
+            <dt>
+                There seems to be a mistake in your documentation.  Can you fix it?
+            </dt>
+            <dd>
+                We'll do our best if you send us email.
+            </dd>
+            <dt>
+                Can I ask for enhancements to Formula Forge?
+            </dt>
+            <dd>
+                By all means, yes.  If what you request seems useful to others, and we can
+                figure out how to do it, we will do our best to oblige.
+            </dd>
+        </dl>
+        
+    </div>  
+    
+    <div id="footer"><a href="Privacy.html">Privacy Policy</a></div>
+    
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+    <title>Formula Forge: Overview</title>
+    <link href="site.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="site.js"></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <img id="logo" src="Images/fx.png" alt="Formula Forge logo">
+        <div id="logoTitle">Formula Forge<div id="logoSubtitle">Stage One Software</div></div>
+        <span id="navigation">
+            <a href="index.html">Home</a>
+            <a href="Overview.html"><strong>Overview</strong></a>
+            <a href="Features.html">Features</a>
+            <span class="dropdown">
+                <span onclick="toggleMenu()" class="dropdown-label">Help</span>
+                <div id="menu" class="dropdown-content">
+                    <a href="Help/index.html">User Guide</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="Screencasts.html">Screencasts</a>
+                </div>
+            </span>
+            <a href="About.html">About</a>
+        </span>
+    </div>
+    
+    <div id="content">
+        
+        <h1>Overview</h1>
+        
+        <p>
+            Formula Forge, by Stage One Software, seeks to reduce the tremendous costs incurred
+            by spreadsheet errors, which are all too prevalent in business.
+        </p>
+        
+        <h2>Sources of Spreadsheet Errors</h2>
+        
+        <p>
+            There are many sources for errors, including poor development practices, formulas
+            improperly copied from one cell to another, and errors in the text of a formula.
+            Generally speaking, these errors can be categorized as <em>practice errors</em>,
+            <em>structural errors</em>, and <em>computational errors</em>.  Formula Forge is
+            designed to reduce errors in the third category.
+        </p>
+        
+        <h3>Practice Errors</h3>
+        
+        <p>
+            Practice errors result from failing to implement and/or adequately follow best
+            practices such as how to handle constants.  Best practice dictates putting constants
+            in cells where they can be readily identified and referenced. Then, if a constant
+            must be changed, only one cell has to be edited, not the many cells that contain
+            the constant as a literal. Organizations that want to reduce or eliminate practice
+            errors often utilize the services of <em>training companies</em> that provide best
+            practices education.
+        </p>
+        
+        <h3>Structural Errors</h3>
+        
+        <p>
+            Structural errors involve relationships among cells in a spreadsheet. A typical
+            error occurs after a formula is replicated by copying it into a range of
+            rows and/or columns. The copies of the formula are structurally the same,
+            differing only in the relative references they contain. An error can occur,
+            however, if one cell in the range is changed in a way that breaks the relationship.
+        </p>
+        
+        <p>
+            Many structural errors can be found by <em>spreadsheet auditing software</em>.
+            Such software can take the form of a plugin or standalone program that reads and
+            analyzes a spreadsheet to produce a report of structural inconsistencies as well
+            as specific practice errors.
+        </p>
+        
+        <h3>Computational Errors</h3>
+        
+        <p>
+            Computational errors arise from several common kinds of mistakes in formulas.
+        </p>
+
+        <h4>Parenthesis Errors</h4>
+        
+        <p>
+            A formula's value depends on the order in which Excel evaluates its operations.
+            Parentheses control this order, but the arrangement and grouping of these slim
+            slim characters can be hard to see.  Problems arise particularly when a formula
+            contains many parentheses, which make it difficult to ascertain the evaluation
+            order by simple visual examination.  Other problems can while editing a formula:
+            Excel may refuse to save the formula because its parentheses are not balanced,
+            or it may save a faulty formula if its parentheses have been inserted incorrectly.
+            Although Excel often suggests how to fix parenthesis errors, it can be hard to see if
+            its suggestions are appropriate or what the correction should be.
+        </p>
+        
+
+        <h4>Evaluation Errors</h4>
+
+        <p>
+            Evaluation errors cause formulas to produce the wrong result.  For example,
+            Excel evaluates <code>-X1^2</code> by computing <code>-X1</code> first and
+            then squaring the result, contrary to ordinary mathematical and programming
+            language conventions, which square X1 first.
+        </p>
+        
+        <h4>Logic Errors</h4>
+        
+        <p>
+            Complicated formulas often use branching functions, such as <code>IF</code>
+            and <code>CHOOSE</code>.  An error can occur if such a function chooses the
+            wrong branch for conditional evaluation.  The likelihood of such an error
+            increases when these functions are nested.
+        </p>
+
+        <h4>Subexpression Errors</h4>
+        
+        <p>
+            A complicated formula often often contains many subexpressions, which in turn
+            may contain still other subexpressions.  If the entire formula has the
+            wrong value, the problem may be caused by an incorrect subexpression. Finding
+            that subexpression can be very difficult.  Pernicious and hard-to-find latent
+            error often occur in unused branches of a conditional function.
+        </p>
+        
+        <h4>Cloning Errors</h4>
+        
+        <p>
+            Sometimes a formula contains the same subexpression multiple times. If the
+            subexpression isn’t copied exactly, it can introduce an error.  Subtle changes
+            in how characters are arranged can be difficult to see, and repetitive expressions
+            in Excel’s character-based formula bar make a formula difficult to read.
+        </p>
+        
+        <h2>Formula Forge: Stage One Software’s Remedy</h2>
+        
+        <p>
+            To date, there has been only limited help for finding and fixing computational
+            errors, mainly on Excel’s Formulas ribbon and in its help files. Stage One
+            Software remedies this defect by offering Formula Forge, the first tool
+            specifically designed to eliminate computational errors. Formula Forge integrates
+            directly into Excel to provide multiple views of formulas that clarify their
+            meaning and their evaluation.
+        </p>
+        
+        <ul>
+            <li>
+                Its <em>text view</em> shows a formula’s text as it appears in Excel’s
+                formula bar.
+            </li>
+            <li>
+                Its <em>math view</em> shows a formula as it would be typeset
+                in a book on mathematics, making it much easier to read.
+            </li>
+            <li>
+                Its <em>tree view</em> contains a hierarchical diagram like an organization
+                chart, showing how Excel decomposes a formula into its constituent elements,
+                along with values for all its elements.
+            </li>
+        </ul>
+        
+        <p>
+            Users can highlight an element they wish to examine in any view.  Formula Forge
+            automatically highlights that element in the other views, enabling users to see
+            where they are.  Users can also collapse elements (to hide irrelevant detail and
+            focus their attention elsewhere) and then re-expand these elements to examine
+            them more closely.
+        </p>
+        
+        <p>
+            A forthcoming release of Formula Forge will provide a drag-and-drop editor.
+            With it, users can construct, debug and modify formulas easily and accurately
+            using simple building blocks, without ever again having to worry about parentheses.
+        </p>
+        
+    </div>
+    
+    <div id="footer"><a href="Privacy.html">Privacy Policy</a></div>
+    
+</body>
+</html>

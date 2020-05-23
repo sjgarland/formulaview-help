@@ -1,0 +1,145 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+    <title>Formula Forge: Features</title>
+    <link href="site.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="site.js"></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <img id="logo" src="Images/fx.png" alt="Formula Forge logo">
+        <div id="logoTitle">Formula Forge<div id="logoSubtitle">Stage One Software</div></div>
+        <span id="navigation">
+            <a href="index.html">Home</a>
+            <a href="Overview.html">Overview</a>
+            <a href="Features.html"><strong>Features</strong></a>
+            <span class="dropdown">
+                <span onclick="toggleMenu()" class="dropdown-label">Help</span>
+                <div id="menu" class="dropdown-content">
+                    <a href="Help/index.html">User Guide</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="Screencasts.html">Screencasts</a>
+                </div>
+            </span>
+            <a href="About.html">About</a>
+        </span>
+    </div>
+    
+    <div id="content">
+        
+        <h1>Features</h1>
+        
+        <h2>Look inside formulas</h2>
+        
+        <div class="figureRight">
+            <img src="Images/ThreeViews.png" alt="Formula Forge Pane"/>
+            <span class="caption">The Formula Forge task pane</span>
+        </div>
+
+        <p>
+            Formula Forge adds a task pane to Excel, and it uses this pane to present
+            three synchronized views of a formula that clarity its meaning and its evaluation.
+        </p>
+        
+        <ul>
+            <li>
+                <em>Text view</em> &#8211; the formula as it appears in Excel&#8217;s
+                formula bar
+            </li>
+            <li>
+                <em>Math view</em> &#8211; the formula typeset to aid recognition
+            </li>
+            <li>
+                <em>Tree view</em> &#8211; a structural view to
+                <ul>
+                    <li>
+                        organize subexpressions
+                    </li>
+                    <li>
+                        display their values
+                    </li>
+                    <li>
+                        expand and collapse their display
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <p>
+            Synchronized views help users see the structure of their formulas and allow them
+            to concentrate on portions of particular interest.  Coordinated highlighting
+            links subexpressions across the views.
+        </p>
+        <p>
+            Users can collapse parts of a formula in the tree view to focus
+            their attention on other parts, and they can substitute ellipses (...)
+            or values in the math and text views for the collapsed parts. 
+            These capabilities let user simplify parts of a formula, thereby making
+            it easier to understand.
+        </p>
+        
+        <h2>Work inside formulas</h2>
+        
+        <p>
+            When configured for editing, Formula Forge's task pane provides a palette of
+            items that can be dragged and dropped into the tree view.
+            It also allows
+        </p>
+        
+        <ul>
+            <li>
+                Moving elements within a formula
+            </li>
+            <li>
+                Creating new elements from items in a palette
+            </li>
+            <li>
+                Creating and using named elements called <em>scraps</em>
+            </li>
+        </ul>
+        
+        <div class="figure">
+            <img src="Images/Editing.jpg" alt="Formula Forge Editor"/>
+            <span class="caption">The Formula Forge editor</span>
+        </div>
+        
+        <h3>Parenthesis-free Editing</h3>
+        
+        <p>
+            Formula Forge allows users to edit without worrying about the parentheses,
+            which Excel requires to specify the order of computation. With Formula Forge,
+            this order is determined by the hierarchical diagram in the tree view.
+            As a result, users get the order right, without ever again having to worry
+            about parentheses.
+        </p>
+        
+        <h3>Easy Editing</h3>
+        
+        <p>
+            Editing is easy with drag and drop. With the aid of the palette, users can
+            change the elements in a formula or create a new formula from scratch.
+            <em>Scraps</em> let users analyze and debug one element at a time.
+            They can create a scrap for any element using drag and drop, and they can display the
+            scrap and edit it in the simultaneous views as if it were the entire formula.
+            They can also drag any scrap into the tree view to incorporate it into a formula.
+            That way, they can construct, debug, and assemble building blocks for a formula easily,
+            accurately, and productively.
+        </p>
+        
+        <h3>Further Aid to Comprehension</h3>
+        
+        <p>
+            The Formula Forge pane provides an aid to comprehension beyond the ability to
+            collapse and expand subexpressions: it lets users assign local names, called
+            <em>aliases</em>, to scraps and to substitute the alias for the text of the
+            scrap wherever it occurs. This capability provides additional clarity.
+        </p>
+        
+    </div>
+    
+    <div id="footer"><a href="Privacy.html">Privacy Policy</a></div>
+    
+</body>
+</html>

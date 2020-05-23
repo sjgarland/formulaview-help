@@ -1,0 +1,89 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+  <title>Formula Forge Help: Information in the Tree View</title>
+  <link href="../site.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../site.js"></script>
+</head>
+
+<body>
+  
+  <div id="header">
+    <img id="logo" src="../Images/fx.png" alt="Formula Forge logo">
+    <div id="logoTitle">Formula Forge User Guide<div id="logoSubtitle">Stage One Software</div></div>
+    <span id="navigation">
+      <a href="../index.html">Home</a>
+      <a href="../Overview.html">Overview</a>
+      <a href="../Features.html">Features</a>
+      <span class="dropdown">
+        <strong><span onclick="toggleMenu()" class="dropdown-label">Help</span></strong>
+        <div id="menu" class="dropdown-content">
+          <a href="index.html">User Guide</a>
+          <a href="../FAQ.html">FAQ</a>
+          <a href="../Screencasts.html">Screencasts</a>
+        </div>
+      </span>
+      <a href="../About.html">About</a>
+    </span>
+  </div>
+  
+  <!--
+    <span id="headerNav">
+      <a href="TOC.html">&#11014; Table of contents</a><br>
+      <a href="TreeView.html">&#11013; The tree view</a><br>
+      <a href="Abbreviations.html">&#10145; Abbreviating a formula</a>
+    </span>
+  -->
+  
+  <div id="content">
+    
+    <h2>Information in the Tree View</h2>
+    
+    <p>
+      Next to each element in the tree view, unless it is a constant, is the value Excel
+      computes for that element.
+    </p>
+    
+    <div class="figure">
+      <img src="Images/Values.png" alt="Values in the tree view">
+      <span class="caption">Values in the tree view</span>
+    </div>
+    
+    <p>
+      For example, this tree view shows the value in cell <code>A1</code>,
+      as well as values for the expressions <code>-A1</code> and <code>(-A1)^2</code>.
+    </p><p>
+      Long values are truncated, with an ellipsis (<code>...</code>) at the end to
+      indicate that something has been cut off.
+    </p>
+    
+    <div class="figure">
+      <img src="Images/Ellipsis.png" alt="Ellipses substituted for long values">
+      <span class="caption">Ellipses indicating cut-off values</span>
+    </div>
+    
+    <p>
+      To see a value that has been cut off, or to see more information about an element
+      in the tree view, hover the cursor over the element to pop up an informative display.
+    </p>
+    
+    <div class="figure">
+      <img src="Images/Tooltip.png" alt="Pop-up in the tree view">
+      <span class="caption">Pop-up information in the tree view</span>
+    </div>
+    
+    <p id="display">
+      A setting in the <a href="Managing.html#values">Formula Forge menu</a>
+      allows users to turn the display of values on or off.
+    </p>
+    
+  </div>
+  
+  <div id="footer">
+    <span class="nav"><a href="TreeView.html">&#11013; The tree view</a></span>
+    <span class="nav center"><a href="TOC.html">&#11014; Table of contents</a></span>
+    <span class="nav right"><a href="Abbreviations.html">Abbreviating a formula &#10145;</a></span>
+  </div>
+  
+</body>
+</html>

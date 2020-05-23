@@ -1,5 +1,4 @@
-# Formula Forge Help
+# Formula Forge Website and User Guide
 
-This project contains the on-line User Guide for the Formula Forge add-in for Office 365 Excel.
-
-The `Help` directory is installed at <https://formulaforge.com/View/Help>.
+This project contains pages for the Formula Forge website.  These pages
+include the on-line User Guide for the Formula Forge add-in for Office 365 Excel.

@@ -1,0 +1,291 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+
+<head>
+  <title>Formula Forge Help: Glossary</title>
+  <link href="../site.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../site.js"></script>
+</head>
+
+<body>
+  
+  <div id="header">
+    <img id="logo" src="../Images/fx.png" alt="Formula Forge logo">
+    <div id="logoTitle">Formula Forge User Guide<div id="logoSubtitle">Stage One Software</div></div>
+    <span id="navigation">
+      <a href="../index.html">Home</a>
+      <a href="../Overview.html">Overview</a>
+      <a href="../Features.html">Features</a>
+      <span class="dropdown">
+        <strong><span onclick="toggleMenu()" class="dropdown-label">Help</span></strong>
+        <div id="menu" class="dropdown-content">
+          <a href="index.html">User Guide</a>
+          <a href="../FAQ.html">FAQ</a>
+          <a href="../Screencasts.html">Screencasts</a>
+        </div>
+      </span>
+      <a href="../About.html">About</a>
+    </span>
+  </div>
+  
+  <!--
+    <span id="headerNav">
+      <a href="TOC.html">&#11014; Table of contents</a><br>
+      <a href="Enlarging.html">&#11013; Enlarging the views</a><br>
+      <a href="Installation.html">&#10145; Installation</a>
+    </span>
+  -->
+  
+  <div id="content">
+    
+    <h2>Glossary</h2>
+    
+    <dl>
+      
+      <!--
+        <dt id="alias">Alias</dt>
+        <dd>
+          An identifier that can be used within Formula Forge as a name
+          or an abbreviation for an expression.
+          An alias is local to Formula Forge; it has no impact on Excel's operation.
+        </dd>
+      -->
+      
+      <dt id="ancestor">Ancestor</dt>
+      <dd>
+        An element in a tree is an <em>ancestor</em> of another if it is its parent or
+        an ancestor of its parent.  For example, in the <a href="#treeView">tree view</a>, 
+        an element representing <code>IF(A1 = 0, B2, C3)</code> is an ancestor of an
+        element representing <code>A1</code>.
+      </dd>
+      
+      <dt id="atomic">Atomic expression</dt>
+      <dd>
+        An expression, such as <code>5</code>, <code>"abc"</code>, and
+        <code>A1</code>, that cannot be decomposed into smaller expressions and
+        are displayed at the bottom of the tree view.
+      </dd>
+      
+      <dt id="canvas">Canvas</dt>
+      <dd>
+        A floating window, with no limitations on its width, in which Formula Forge
+        can displayed when Excel's task <a href="#pane">pane</a> is too narrow.
+      </dd>
+      
+      <dt id="child">Child</dt>
+      <dd>
+        An <a href="#element">element</a> in a <a href="#tree">tree</a> that has
+        a <a href="#parent">parent</a>.  In the <a href="#treeView">tree view</a>,
+        a child appears below its parent.  For example, elements representing the
+        expressions <code>A1</code> and <code>B1</code> appear as children of an element
+        representing the expression <code>A1 + B1</code>.
+      </dd>
+      
+      <dt id="compound">Compound expression</dt>
+      <dd>
+        An expression, such as <code>A1 + 5</code> and <code>IF(A1 = 0, B2, C3)</code>,
+        that can be decomposed into smaller expressions.
+      </dd>
+      
+      <dt id="descendant">Descendant</dt>
+      <dd>
+        One <a href="#element">element</a> in a <a href="#tree">tree</a> is a
+        <em>descendant</em> of another if that other element is one of its
+        <a href="#ancestor">ancestors</a>.  For example, in the
+        <a href="#treeView">Tree View</a>, an element representing the
+        expression <code>A1</code> is a descendant of an element representing
+        the expression <code>IF(A1 = 0, B2, C3)</code>.
+      </dd>
+      
+      <dt id="element">Element</dt>
+      <dd>
+        An instance of an expression. For example, the expression
+        <code>A1 + B1</code> may occur more than once in a formula.  Each
+        occurrence is an element of the formula.
+      </dd>
+      
+      <dt id="ellipsis">Ellipsis</dt>
+      <dd>
+        Two or three dots used to abbreviate an <a href="#expression">expression</a>
+        or a string, as in <code>IF(..., A1, B1)</code> and <code>"This .."</code>.
+      </dd>
+      
+      <dt id="expression">Expression</dt>
+      <dd>
+        A string that can represent a formula in Excel. An expression can be an
+        <a href="#atomic">atomic expression</a>, which cannot be decomposed
+        into smaller expressions, or a <a href="#compound">compound
+          expression</a>, which can.
+        </dd>
+        
+        <dt id="formula">Formula</dt>
+        <dd>
+          An expression, such as <code>A1 + 2</code>, obtained from a cell in
+          Excel whose contents begin with an equal sign (i.e., from a cell
+          with <code>=A1 + 2</code> as its contents).
+        </dd>
+        
+        <dt id="formulaView">Formula views</dt>
+        <dd>
+          Formula Forge's <a href="#textView">text view</a>, <a href="#mathView">math view</a>,
+          and <a href="#treeView">tree view</a>.
+        </dd>
+        
+        <dt id="hover">Hover</dt>
+        <dd>
+          An event that occurs when a user moves or <em>hovers</em> the cursor
+          over some element of a graphical user interface.  See <a
+          href="#tooltip">tooltip</a>. 
+        </dd>
+        
+        <!--
+          <dt id="logicRegion">Logic Region</dt>
+          <dd>
+            The <em>Logic Region</em> for an element in a formula is the collection of
+            logical tests (i.e., first arguments) in all <code>IF</code> functions whose
+            second or third arguments (i.e., its values if its first argument is
+            <code>TRUE</code> or <code>FALSE</code>) are <a href="#ancestor">ancestors</a>
+            of the given element.
+          </dd>
+        -->
+        
+        <dt id="mathView">Math view</dt>
+        <dd>
+          A representation of a <a href="#formula">formula</a>, similar to
+          those found in typeset mathematics and engineering textbooks, that
+          employs standard mathematical symbols and uses standard typographic
+          conventions (e.g, for numerators and denominators in fractions).
+        </dd>
+        
+        <!--
+          <dt id="name">Name</dt>
+          <dd>
+            An identifier in Excel that represents a cell, range of cells, formula, or constant value.
+          </dd>
+        -->
+        
+        <dt id="pane">Pane</dt>
+        <dd>
+          The rectangular area in which Formula Forge is displayed, either to the right of the
+          spreadsheet in Excel's window or in a floating <a href="#canvas">canvas</a>.  Sometimes
+          known as a "task pane".
+        </dd>
+        
+        <!--
+          <dt id="panel">Panel</dt>
+          <dd>
+            A column of <a href="#pane">panes</a> in the FormulaForge window. The
+            FormulaForge window has three panels: left, center, and right.
+          </dd>
+        --> 
+        
+        <dt id="parent">Parent</dt>
+        <dd>
+          An <a href="#element">element</a> in a <a href="#tree">tree</a> that has
+          a <a href="#child">child</a>.  In the <a
+          href="#treeView">tree view</a>, the parent appears above each of its
+          <a href="#child">children</a>.
+        </dd>
+        
+        <dt id="reference">Reference</dt>
+        <dd>
+          In Excel, an identifier for the location of a cell (e.g., <code>A1</code>,
+          <code>$B$35</code>) or a range of cells (e.g, <code>C1:E10</code>,
+          <code>$A:$B</code>, <code>$100</code>).
+          
+        </dd>
+        
+        <dt id="selection">Selection</dt>
+        <dd>
+          The <a href="#element">element</a> currently selected by the user. A
+          selection is highlighted in blue in the <a href="#mathView">math view</a>,
+          <a href="#textView">text view</a>, and <a href="#treeView">tree view</a>.
+        </dd>
+        
+        <dt id="sibling">Sibling</dt>
+        <dd>
+          An <a href="#element">element</a> in a <a href="#tree">tree</a> with the same <a
+          href="#parent">parent</a> as another element.  Any two <a
+          href="#child">children</a> of a single element in a tree are siblings
+          of each other.  For example, in the <a href="#treeView">tree
+            view</a>, an element representing<code>A1 + B1</code> has two children,
+            representing <code>A1</code> and <code>B1</code>, which are
+            siblings of one another.
+          </dd>
+          
+          <!--
+            <dt id="stub">Stub</dt>
+            <dd>
+              A named placeholder for an element in a formula.  Stubs (e.g.,
+              <code class="red">Stub</code>, <code class="red">number</code>, and
+              <code class="red">value_if_true</code>) appear in red
+              in the formula views and surrounded by accent marks (e.g.,
+              <code>`Stub`</code>) in the <a href="TextEditor.html">Text Editor</a>
+              to distinguish them from Excel names.
+            </dd>
+          -->
+          
+          <dt id="tooltip">Tooltip</dt>
+          <dd>
+            A box of information that appears when the cursor <a
+            href="#hover">hovers</a> over an element (such as a
+            button) in a graphical user interface.
+            <br><br>
+            Tooltips provide information about elements in the
+            <a href="TreeView.html#tooltip">tree view</a>.
+            <!--
+              and about the cells from which formulas
+              were obtained in the <a href="Scrapbook.html#tooltip">Scrapbook</a>.  
+            --> 
+          </dd>
+          
+          <dt id="top">Top element</dt>
+          <dd>
+            The unique <a href="#element">element</a> in a <a href="#tree">tree</a>
+            that is an <a href="#ancestor">ancestor</a> of every other element in
+            the tree.  In the <a href="#treeView">tree view</a>, the top element
+            represents an entire formula.
+          </dd>
+          
+          <dt id="textView">Text view</dt>
+          <dd>
+            A representation of a <a href="#formula">formula</a> as a string of
+            characters that is recognized, when preceded by an equals sign, as
+            input to Excel.
+          </dd>
+          
+          <dt id="tree">Tree</dt>
+          <dd>
+            A nonempty set of <a href="#element">elements</a>, some of which
+            are <a href="#child">children</a> of other elements.  Each tree
+            has the following properties:
+            <ul>
+              <li>Each element is the child of at most one other element,
+                called its <a href="#parent">parent</a>.</li>
+                <li>The children of each element are ordered from left to right.</li>
+                <li>There is exactly one element in a tree, called its
+                  <a href="#top">top element</a>, that has no parent.
+                  This top element is an <a href="#ancestor">ancestor</a> of every
+                  other element in the tree.</li>
+                </ul>
+              </dd>
+              
+              <dt id="treeView">Tree view</dt>
+              <dd>
+                A hierarchical representation of a <a href="#formula">formula</a> or an
+                <a href="#expression">expression</a> as a <a href="#tree">tree</a>.
+                Similar in appearance to an organization chart.
+              </dd>
+            </dl>
+            
+          </div>
+          
+          <div id="footer">
+            <span class="nav"><a href="Enlarging.html">&#11013; Enlarging the views</a></span>
+            <span class="nav center"><a href="TOC.html">&#11014; Table of contents</a></span>
+            <span class="nav right"><a href="Installation.html">Installation &#10145;</a></span>
+          </div>
+          
+        </body>
+        </html>
+        
