@@ -76,7 +76,7 @@ ul {
 #header {
     height:               80px;
     margin-bottom:        40px;
-    padding:              30px 40px 30px 40px;
+    padding:              30px 80px 30px 80px;
     font-size:        	  28pt;
     color:                #4d82b8;  /* rgb(77,130,184), cmyk(58,29,0,28), hsb(210,58,72) */
     background-color:     #f0f0f0;
@@ -121,14 +121,21 @@ ul {
     margin-left:          20px;
 }
 
+/* For navigation in the title of a page in the User Guide. */
+#guideNav {
+    font-size:            12pt;   /* Small size to remain above the first <p> */
+    font-weight:          normal;
+    float:                right;
+}
+
 /* For <div id="content"> */
 #content {
-    margin:               40px;
+    margin:               80px;
 }
 
 /* For <div id="footer"> */
 #footer {
-    padding:              20px 40px 20px 40px;
+    padding:              20px 80px 20px 80px;
     color:                #4d82b8;
     background-color:     #f0f0f0;
     clear:                both;
@@ -146,6 +153,11 @@ ul {
 /* For <tag class="center"> */
 .center {
     text-align:           center;
+}
+
+/* For <tag class="hidden"> (mainly to suppress <h1> headers to keep TotalValidator happy) */
+.hidden {
+    display:              none;
 }
 
 /* For <tag class="indent"> */
@@ -218,11 +230,11 @@ ul {
 }
 
 .dropdown-content {
-    margin-left:          -40px;
+    left:                 -160px;
+    width:                432px;
     display:              none;
     position:             absolute;
     background-color:     #f1f1f1;
-    min-width:            160px;
     z-index:              1;
 }
 

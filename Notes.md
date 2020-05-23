@@ -4,17 +4,13 @@
 
 Install on formulaforge.com.  Update the links to the User Guide and the privacy notice in the add-in and in Microsoft's Partner Center.
 
-Write `Screencasts.html`.  Redo the screencasts.
-
-Redo the images and video on the web pages.
+Redo the images and videos on the web pages.
 
 Investigate appearance on small screens, with other browsers.
 
 Decide what to do about Google Analytics.
 
 Find better arrows than &#11014;, &#11013;, and &#10145;.  These arrows do not have the same width, and Edge displays them with ugly icons.  Try SVG arrows instead of fuzzy PNG images such as ![this](Help/Images/left.png).
-
-Decide whether to put navigation links at the top of the pages of the User Guide, similar to those in the footer.
 
 See <https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html> about using relative rather than absolute sizes in `site.css`.
 
@@ -44,9 +40,9 @@ The drop-down menu in the header is handled by two functions defined in `site.js
 Style for the help pages defined in `site.css`
 
 - Typeface: Helvetica (because Max OS X does not provide Segoe)
-- Fx color: Microsoft’s recommended color #4d82b8
+- Fx color: Microsoft's recommended color #4d82b8
 - Title color: #505050
-- Header background color: #f0f0f0 (used for Excel’s ribbon)
+- Header background color: #f0f0f0 (used for Excel's ribbon)
 
 It's not clear why browsers running under Windows place the logo title _Formula Forge_ somewhat lower than browsers running under Mac OS X.  The top margins for this title and for the header title were reduced by 3px to make the header look better under Windows and still reasonable under Mac OS X.
 
