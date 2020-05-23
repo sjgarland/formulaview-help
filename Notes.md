@@ -4,8 +4,7 @@
 
 Find better arrows than &#11014;, &#11013;, and &#10145;.  These arrows do not have the same width, and Edge displays them with ugly icons.  Try SVG arrows instead of fuzzy PNG images such as ![this](Help/Images/left.png).
 
-Decide whether to put navigation links at the top of the pages of the User Guide, similar
-to those in the footer.
+Decide whether to put navigation links at the top of the pages of the User Guide, similar to those in the footer.
 
 See <https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html> about using relative rather than absolute sizes in `site.css`.
 
@@ -15,19 +14,18 @@ Add accessible names to tables.
 
 Investigate appearance on small screens, with other browsers.
 
+Decide what to do about Google Analytics.
+
 ## Structure
 
 The User Guide is stored in multiple HTML files rather than in a single monolithic file.
 
-The files in the User Guide, with few exceptions, are styled in the same fashion as the
-other files on the Formula Forge website.
+The files in the User Guide, with few exceptions, are styled in the same fashion as the other files on the Formula Forge website.
 
 - The header extends the title _Formula Forge_ to _Formula Forge Help_.
 - The footer contains navigation links instead of a link to the privacy notice.
 
-To produce a single monolithic help files, it suffices to extract, anchor, and join 
-the `<div id="content"> ... </div>` sections from the separate files, and to adjust
-links to use these anchors instead of file names.
+To produce a single monolithic help files, it suffices to extract, anchor, and join the `<div id="content"> ... </div>` sections from the separate files, and to adjust links to use these anchors instead of file names.
 
 ## Notes
 
