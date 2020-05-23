@@ -2,19 +2,23 @@
 
 ## Agenda
 
+Install on formulaforge.com.  Update the links to the User Guide and the privacy notice in the add-in and in Microsoft's Partner Center.
+
+Write `Screencasts.html`.  Redo the screencasts.
+
+Redo the images and video on the web pages.
+
+Investigate appearance on small screens, with other browsers.
+
+Decide what to do about Google Analytics.
+
 Find better arrows than &#11014;, &#11013;, and &#10145;.  These arrows do not have the same width, and Edge displays them with ugly icons.  Try SVG arrows instead of fuzzy PNG images such as ![this](Help/Images/left.png).
 
 Decide whether to put navigation links at the top of the pages of the User Guide, similar to those in the footer.
 
 See <https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html> about using relative rather than absolute sizes in `site.css`.
 
-Write `Screencasts.html`.
-
 Add accessible names to tables.
-
-Investigate appearance on small screens, with other browsers.
-
-Decide what to do about Google Analytics.
 
 ## Structure
 
