@@ -4,13 +4,13 @@
 
 Install on formulaforge.com.  Update the links to the User Guide and the privacy notice in the add-in and in Microsoft's Partner Center.
 
-Redo the images and videos on the web pages.
+Redo the videos, starting with the one on the landing page.
 
-Investigate appearance on small screens, with other browsers.
+Use the same navigation links at top of each page as at bottom.  Change the left/right arrows &#11013; and &#10145; to ones that Edge does not replace with ugly icons.  Eliminate the up-arrow in the link to the table of contents.
+
+Look into [responsive design](https://www.w3schools.com/html/html_responsive.asp), particularly for a way to handle the navigation links on narrow screens.
 
 Decide what to do about Google Analytics.
-
-Find better arrows than &#11014;, &#11013;, and &#10145;.  These arrows do not have the same width, and Edge displays them with ugly icons.  Try SVG arrows instead of fuzzy PNG images such as ![this](Help/Images/left.png).
 
 See <https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html> about using relative rather than absolute sizes in `site.css`.
 
@@ -22,7 +22,7 @@ The User Guide is stored in multiple HTML files rather than in a single monolith
 
 The files in the User Guide, with few exceptions, are styled in the same fashion as the other files on the Formula Forge website.
 
-- The header extends the title _Formula Forge_ to _Formula Forge Help_.
+- The header extends the title _Formula Forge_ to _Formula Forge User Guide.
 - The footer contains navigation links instead of a link to the privacy notice.
 
 To produce a single monolithic help files, it suffices to extract, anchor, and join the `<div id="content"> ... </div>` sections from the separate files, and to adjust links to use these anchors instead of file names.
@@ -42,7 +42,7 @@ Style for the help pages defined in `site.css`
 - Typeface: Helvetica (because Max OS X does not provide Segoe)
 - Fx color: Microsoft's recommended color #4d82b8
 - Title color: #505050
-- Header background color: #f0f0f0 (used for Excel's ribbon)
+- Header background color: #f9f9f9 (lighter than that of Excel's ribbon)
 
 It's not clear why browsers running under Windows place the logo title _Formula Forge_ somewhat lower than browsers running under Mac OS X.  The top margins for this title and for the header title were reduced by 3px to make the header look better under Windows and still reasonable under Mac OS X.
 
@@ -68,7 +68,7 @@ Recommendations in <https://www.64notes.com/design/stop-helvetica-arial/>
   - Georgia is much better than Times New Roman for serifs
 - Color
   - Text: #222222 to #555555
-  - Background: off white #FAFAFA, #F9F9F9, #F8F8F8
+  - Background: off-white #FAFAFA, #F9F9F9, #F8F8F8
 
 ## Out-takes
 
