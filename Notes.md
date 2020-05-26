@@ -4,7 +4,7 @@
 
 Install on formulaforge.com.  Update the links to the User Guide and the privacy notice in the add-in and in Microsoft's Partner Center.
 
-Redo the videos, starting with the one on the landing page.
+Redo the videos, starting with the one on the landing page.  Hide controls for video on landing page.
 
 Use the same navigation links at top of each page as at bottom.  Change the left/right arrows &#11013; and &#10145; to ones that Edge does not replace with ugly icons.  Eliminate the up-arrow in the link to the table of contents.
 
