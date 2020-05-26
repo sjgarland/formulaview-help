@@ -75,10 +75,8 @@ ul {
 
 /* For <div id="header"> */
 #header {
-    height:               80px;
-    padding:              30px 80px 30px 80px;
-    font-size:        	  28pt;
-    color:                #4d82b8;  /* rgb(77,130,184), cmyk(58,29,0,28), hsb(210,58,72) */
+    height:               60px;
+    padding:              20px 80px 20px 80px;
     background-color:     #f9f9f9;
 }
 
@@ -90,14 +88,16 @@ ul {
 
 /* For <div id="logoTitle"> within a header */
 #logoTitle {
-    margin-top:           4px;
+    margin-top:           8px;
     margin-left:          10px;
     float:                left;
+    font-size:        	  20pt;
+    color:                #4d82b8;  /* rgb(77,130,184), cmyk(58,29,0,28), hsb(210,58,72) */
 }
 
 /* For <span id="logoSubtitle"> within a header */
 #logoSubtitle {
-    font-size:            26px;
+    font-size:            18px;
     color:                #505050;
 }
 
@@ -112,8 +112,8 @@ ul {
 /* For <span id="navigation"> within a header */
 #navigation {
     float:                right;
-    margin-top:           20px;
-    font-size:            24px;
+    margin-top:           16px;
+    font-size:            16pt;
 }
 
 /* Extra space separating the navigation links.  Same as for dropdown-label. */
@@ -141,7 +141,7 @@ ul {
 
 /* For <div id="content"> */
 #content {
-    margin:               0px 80px 0px 80px;
+    margin:               20px 80px 0px 80px;
 }
 
 /* For <div id="footer"> */
@@ -218,7 +218,6 @@ ul {
 .caption {
     margin-top:           5px;
     display:              block;
-    font-size:            16pt;
     text-align:           center;
 }
 
